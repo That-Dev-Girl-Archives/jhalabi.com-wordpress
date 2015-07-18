@@ -1,0 +1,139 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS
+----------------------------------------------------------------
+1.0 Photo gallery page
+2.0 Photo album page
+
+/*--------------------------------------------------------------
+1.0 Photo gallery page
+--------------------------------------------------------------*/
+
+.photos__section {
+	h2 {
+		@include full-width-header;
+		
+		margin-top: 2em;
+	}
+
+	.ngg-album-compact {
+		margin-bottom: 2em !important;
+		width: 100%; 
+
+		@include media($medium_screen) {
+			@include span-columns(6 of 12);
+			margin-right: 2.35% !important;
+		}
+
+		@include media($medium_only) {
+			&:nth-child(2n) {
+				margin-right: 0 !important;
+			}		
+		}
+
+		@include media($large_screen) {
+			@include span-columns(4 of 12);
+			height: 24em;
+			margin-right: 2.35% !important;
+
+			&:nth-child(3n) {
+				margin-right: 0 !important;
+			}
+		}
+
+		h4 {
+			font-size: 1.5em;
+			font-weight: normal;
+			line-height: 1.25em;
+
+			.ngg-album-desc {
+				height: auto;
+			}
+		}
+
+		p {
+			font-size: 0.9em;
+		}
+	}
+ 
+	.ngg-album-compactbox,
+	.ngg-album-compactbox:before,
+	.ngg-album-compactbox:after {
+		border: 0;
+	}
+
+	.ngg-album-compactbox {
+		padding: 0 !important;
+
+		.Thumb {
+			width: 100%;
+
+			&:hover {
+				opacity: 0.65;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+2.0 Photo album page
+--------------------------------------------------------------*/
+
+.page {
+	.nav {
+		border: solid $grey_border;
+		border-width: 1px 0;
+		margin: 2em 0;
+
+		p {
+			font-size: 1em;
+			margin: 0.5em;
+
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.slideshowlink {
+		display: none;
+	}
+}
+
+.ngg-gallery-thumbnail-box {
+	float: none;
+	width: 100%;
+
+	@include media($medium_screen) {
+		@include span-columns(4 of 12);
+	}
+
+	@include media($medium_only) {
+		&:nth-of-type(3n+1) {
+			@include omega;
+		}
+	}
+
+	@include media($large_screen) {
+		@include span-columns(3 of 12); 
+
+		&:nth-of-type(4n+1) {
+			@include omega;
+		}
+	}
+
+	img {
+		border: 1px solid $black;
+		height: auto;
+		margin-bottom: 1em;
+		padding: 1px;
+		width: 100%;
+
+		&:hover {
+			opacity: 0.65;
+		}
+	}
+}
+
+.ngg-gallery-thumbnail {
+	float: none !important;
+}

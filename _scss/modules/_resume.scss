@@ -1,0 +1,139 @@
+.resume__section {
+	display: inline-block;
+	margin-bottom: 3em;
+	width: 100%;
+
+	header {
+		@include full-width-header;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+}
+
+.resume-skills__div {
+	background: $purple_verylight;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	padding: 2em;
+
+	&:nth-child(2) {
+		background: lighten($purple_verylight, 10%);
+	}
+
+	&:nth-child(3) {
+		background: lighten($purple_verylight, 20%);
+	}
+
+	&:nth-child(4) {
+		background: lighten($purple_verylight, 30%);
+	}
+
+	@include media($medium_screen) {
+		@include span-columns(6 of 12);
+		height: 300px;
+	}
+
+	@include media($medium_only) {
+		@include omega(2n);
+
+		&:nth-child(3), &:nth-child(4) {
+			height: 220px;
+		}
+	}
+
+	@include media($large_screen) {
+		@include span-columns(3 of 12);
+		height: 320px;
+	}
+
+	ul {
+		margin: 1em 0 0;
+	}
+
+	li {
+		margin-bottom: 0;
+	}
+
+	li:before {
+		content: "\2610";
+		margin-right:5px;
+	}
+}
+
+.resume__section--experience {
+	p strong {
+		font-weight: bold;
+		font-size: 1.1em;
+		letter-spacing: 1px;
+	}
+
+	ul {
+		margin-left: 3em;
+	}
+
+	li {
+		list-style-type: square;
+	}
+}
+
+.resume__section--misc {
+	p {
+		margin-bottom: 2em;
+	}
+}
+
+.resume__section--social {
+	a {
+		background: $grey_bg_light;
+		color: $black;
+		display: block;
+		font-family: $font_sans;
+		font-size: 1.2em;
+		margin-bottom: 1em;
+		padding: 2em;
+		text-align: center;
+		width: 100%;
+
+		i {
+			display: block;
+			font-size: 2em;
+			margin-bottom: 0.35em;
+		}
+
+		&:hover {
+			background: darken($grey_bg_light, 10%);
+		}
+
+		&:nth-child(2n) {
+			background: lighten($purple_verylight, 10%);
+
+			&:hover {
+				background: $purple_verylight;
+			}
+		}
+
+		@include media($medium_screen) {
+			@include span-columns(6 of 12);
+			height: 7.5em;
+		}
+
+		@include media($medium_only) {
+			@include omega(2n);
+		}
+
+		@include media($large_screen) {
+			@include span-columns(3 of 12);
+			height: 9em;
+		}
+	}
+}

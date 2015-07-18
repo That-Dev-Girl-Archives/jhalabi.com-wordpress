@@ -1,0 +1,54 @@
+// Colors
+$black: #000;
+$white: #fff;
+
+$purple_base: #7d2861;
+$purple_dark: #5d0f44;
+$purple_light: #9b4a81;
+$purple_verylight: #bd7aa7;
+
+$grey_border: #aaa;
+$grey_border_dark: #666;
+
+$grey_bg_dark: #222;
+$grey_bg_light: #e7dfe4;
+$grey_bg_verylight: #f6f6f6;
+$grey_bg: #ccc;
+
+
+// Gutters
+$gutter_default: 20px;
+$gutter_medium: 60px;
+$gutter_large: 100px;
+
+
+// Fonts
+$font_serif: Amethysta, serif;
+$font_sans: Raleway, sans-serif;
+
+
+// Breakpoints
+$medium_screen: new-breakpoint(min-width 768px 2);
+$large_screen: new-breakpoint(min-width 1025px 12);
+$medium_only: new-breakpoint(min-width 768px max-width 1024px 2);
+
+
+// Mixins
+@mixin full-width-header {
+	background: $grey_bg_light;
+	margin-bottom: 2em;
+	margin-left: -$gutter_default;
+	margin-right: -$gutter_default;
+	padding: 5px 0;
+	text-align: center;
+
+	@include media($medium_screen) {
+		margin-left: -$gutter_medium;
+		margin-right: -$gutter_medium;
+	}
+
+	@include media($large_screen) {
+		margin-left: -$gutter_large;
+		margin-right: -$gutter_large;
+	}
+}

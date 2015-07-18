@@ -1,0 +1,13 @@
+{
+  "name": "jhalabiWebsite",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-ruby-sass": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-minify-css": "*"
+  }
+}

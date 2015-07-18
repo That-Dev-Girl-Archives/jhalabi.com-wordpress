@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS
+----------------------------------------------------------------
+1.0 Home intro section
+2.0 Recent post section
+3.0 Bridging the gap at the bottom of the page
+
+/*--------------------------------------------------------------
+1.0 Home intro section
+--------------------------------------------------------------*/
+
+.home-intro {
+	margin: 1em 0 4em;
+
+	b {
+		font-weight: bold;
+	}
+}
+
+/*--------------------------------------------------------------
+2.0 Recent post section
+--------------------------------------------------------------*/
+
+.excerpt__article.home {
+	background: url('../img/photo-bg-home.jpg');
+	background-position: 50%;
+	background-size: cover;
+	display: inline-block;
+	opacity: 0.95;
+
+	div h2 a:hover {
+		background: $grey_bg_light;
+	}
+}
+
+.excerpt__div {
+	background: $white;
+	padding: 2em;
+
+	@include media($large-screen) {
+		@include span_columns(6 of 12);
+		float: right;
+	}
+}
+
+/*--------------------------------------------------------------
+3.0 Bridging the gap at the bottom of the page
+--------------------------------------------------------------*/
+
+.home {
+	& > br {
+		display: none;
+	}
+
+	.site-content {
+		padding-bottom: 0;
+	}
+
+	.site-footer {
+		margin-top: 0.25em;
+
+		@include media($large_screen) {
+			margin-top: 0;
+		}
+	}
+}
