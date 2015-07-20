@@ -69,13 +69,15 @@ ul, ol {
 a { 
 	color: $purple_base;
 	text-decoration: none; 
-	
-	-webkit-transition: all .35s;
-	transition: all .35s;
 
 	&:hover {
 		background: $grey_bg_light;
 	}
+}
+
+a, input[type=submit] {
+	-webkit-transition: all .35s;
+	transition: all .35s;
 }
 
 pre[class*="language-"] { 
