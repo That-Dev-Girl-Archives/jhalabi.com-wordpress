@@ -36,9 +36,11 @@ if ( !function_exists('jhalabi_comment_form') ):
 	function jhalabi_comment_form() {
 		$fields =  array(
 		    'author' =>
-			    '<p class="comment-form-author"><label for="author">' . __( 'Name', 'domainreference' ) . '</label> ' .
-			    ( $req ? '<span class="required">*</span>' : '' ) .
+			    '<p class="comment-form-author"><label for="author">' . __( 'Name', 'domainreference' ) . ' <span class="required">*</span></label>' .
 			    '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+			    '" size="30"' . $aria_req . ' /></p>' .
+			    '<p class="comment-form-email"><label for="email">' . __( 'E-mail', 'domainreference' ) . ' <span class="required">*</span></label>' .
+			    '<input id="email" name="email" type="email" value="' . esc_attr( $commenter['comment_email'] ) .
 			    '" size="30"' . $aria_req . ' /></p>'
 		);
 
