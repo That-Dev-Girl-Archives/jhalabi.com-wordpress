@@ -9,14 +9,17 @@
 --------------------------------------------------------------*/
 
 .photos__section {
+	padding-top: 2em;
+	
 	h2 {
 		@include full-width-header;
 		
-		margin-top: 2em;
+		margin-bottom: 1em;
+		margin-top: 0;
 	}
 
 	.ngg-album-compact {
-		margin-bottom: 2em !important;
+		margin-bottom: 1em !important;
 		width: 100%; 
 
 		@include media($medium_screen) {
@@ -52,6 +55,15 @@
 
 		p {
 			font-size: 0.9em;
+		}
+
+		a {
+			background: transparent;
+		}
+
+		img {
+			-webkit-transition: all .35s;
+			transition: all .35s;
 		}
 	}
  
@@ -136,4 +148,23 @@
 
 .ngg-gallery-thumbnail {
 	float: none !important;
+}
+
+.ngg-navigation {
+	font-family: $font-sans;
+	padding: 2em !important;
+
+	span {
+		margin: 0 0.5em !important;
+	}
+
+	a.page-numbers, a.next, a.prev, 
+	span.page-numbers, span.next, span.prev {
+		margin-right: 0.5em !important;
+	}
+
+	a.page-numbers:hover, a.next:hover, a.prev:hover, 
+	span.page-numbers:hover, span.next:hover, span.prev:hover {
+		background: $purple_dark !important;
+	}
 }

@@ -35,7 +35,7 @@ $medium_only: new-breakpoint(min-width 768px max-width 1024px 2);
 
 // Mixins
 @mixin full-width-header {
-	background: $grey_bg_light;
+	background: #eee;
 	margin-bottom: 2em;
 	margin-left: -$gutter_default;
 	margin-right: -$gutter_default;

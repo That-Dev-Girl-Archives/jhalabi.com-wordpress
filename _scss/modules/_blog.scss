@@ -14,20 +14,12 @@
 	margin: 3em 0;
 
 	article {
-		background: lighten($purple_verylight, 25%);
+		border: 1px solid $grey_border;
 		margin-bottom: 1em;
 		padding: 1em 1em 2em;
 
 		h2 a:hover {
 			background: lighten($purple_verylight, 15%);
-		}
-
-		&:nth-child(2n) {
-			background: $grey_bg_verylight;
-
-			h2 a:hover {
-				background: darken($grey_bg_verylight, 10%);
-			}
 		}
 
 		@include media($medium_screen) {
@@ -78,8 +70,15 @@
 
 	.entry {
 		ol, ul {
-			list-style-type: square;
 			margin-left: 4em;
+		}
+
+		ul {
+			list-style-type: square;
+		}
+
+		ol {
+			list-style-type: decimal;
 		}
 
 		li {
@@ -290,4 +289,8 @@
 
 .archive.tag header h1 {
 	margin-bottom: 1em;
+}
+
+.navigation.posts-navigation {
+	margin-top: 3em;
 }
