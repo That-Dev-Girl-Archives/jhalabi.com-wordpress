@@ -23,23 +23,7 @@ get_header(); ?>
 			</header>
 
 			<div class="resume-skills__div">
-				<p>
-					I have had a lot of exposure to many languages and technologies over the course of my 15+ year
-					career.  My focus started out on the very front-end, working solely on HTML and CSS; however I 
-					have spent more and more time since then on mid- to back-end technical stacks and love it.
-				</p>
-
-				<p>
-					My favorite aspect of writing code is developing algorithms and solving technical problems (which,
-					honestly, is the entire point of writing code in the first place).  My love of patterns and 
-					efficient code stems from my extensive experience as a Javascript developer, but, lately I have
-					also been extending this to PHP development as well.
-				</p>
-
-				<p>
-					Much of my professional development experience has been focused on internal corporate projects; 
-					however you can see code samples, widgets, and plugins that I have written on my code examples site:
-				</p>
+				<?php echo the_field('technical_skills'); ?>
 
 				<p>
 					<a href="http://www.thatdevgirl.com" target="_blank" class="resume-skills--button">
