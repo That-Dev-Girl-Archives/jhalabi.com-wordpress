@@ -39,7 +39,7 @@ $medium_only: new-breakpoint(min-width 768px max-width 1024px 2);
 	margin-bottom: 2em;
 	margin-left: -$gutter_default;
 	margin-right: -$gutter_default;
-	padding: 5px 0;
+	padding: 0.6em 1em;
 	text-align: center;
 
 	@include media($medium_screen) {

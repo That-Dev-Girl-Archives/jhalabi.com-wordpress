@@ -22,15 +22,21 @@
 }
 
 .resume-skills header {
-    margin-bottom: 2em;
+	margin-bottom: 0;
+
+	@include media($medium_screen) {
+    	margin-bottom: 2em;
+    }
 }
 
 .resume-skills__div {
-    padding: 2em 2em 0;
+    padding: 2em 0 0;
 
     @include media($medium_screen) {
         @include span-columns(6 of 12);
         @include omega(2n+1);
+
+        padding: 2em 2em 0;
     }
 
     h3 {
@@ -39,7 +45,19 @@
     }
 
     ul {
-        margin: 1em 0 1em 2em;
+        margin: 1em 0 3em 1em;
+
+        &:last-child {
+    		margin-bottom: 0;
+    	}
+
+        @include media($medium_screen) {
+        	margin: 1em 0 1em 2em;
+
+        	&:last-child {
+        		margin-bottom: 1em;
+        	}
+        }
     }
 
     li {

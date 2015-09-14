@@ -42,7 +42,7 @@ get_header(); ?>
 				</p>
 
 				<p>
-					<a href="http://www.thatdevgirl.com" class="resume-skills--button">
+					<a href="http://www.thatdevgirl.com" target="_blank" class="resume-skills--button">
 						<i class="fa fa-code"></i>
 						http://www.thatdevgirl.com
 					</a>
@@ -75,7 +75,7 @@ get_header(); ?>
 				</ul>
 
 				<h3>CMS &amp; E-Commerce</h3>
-				<ul>
+				<ul class="last">
 					<li>WordPress / WooCommerce</li>
 					<li>Drupal</li>
 					<li>Magento</li>
