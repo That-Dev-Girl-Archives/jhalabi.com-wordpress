@@ -9,120 +9,120 @@
 --------------------------------------------------------------*/
 
 .site-header {
-	background: $black;
-	text-align: center;
-	z-index: 100;
+    background: $black;
+    text-align: center;
+    z-index: 100;
 
-	@include media($medium_screen) {
-		padding: 0 0 0 $gutter;
-		text-align: left;
-		width: 100%;
-	}
+    @include media($medium_screen) {
+        padding: 0 0 0 $gutter;
+        text-align: left;
+        width: 100%;
+    }
 
-	@include media($large_screen) {
-		position: fixed;
-		top: 0;
-	}
+    @include media($large_screen) {
+        position: fixed;
+        top: 0;
+    }
 
-	a, a:hover {
-		background: transparent;
-		color: $white;
-	}
+    a, a:hover {
+        background: transparent;
+        color: $white;
+    }
 }
 
 .site-header__img {
-	display: inline;
-	position: relative;
-	top: 4px;
-	width: 2em;
+    display: inline;
+    position: relative;
+    top: 4px;
+    width: 2em;
 }
 
 .site-header__h1 {
-	display: inline;
-	font-size: 2em;
-	letter-spacing: 2px;
-	margin: 0;
+    display: inline;
+    font-size: 2em;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 .site-nav a.site-nav__a--menu {
-	background: $purple_dark;
-	display: block;
-	font-family: $font-sans;
-	font-size: 1.1em;
-	padding: 10px;
-	width: 100%;
+    background: $purple_dark;
+    display: block;
+    font-family: $font-sans;
+    font-size: 1.1em;
+    padding: 10px;
+    width: 100%;
 
-	@include media($medium_screen) {
-		display: none;
-	}
+    @include media($medium_screen) {
+        display: none;
+    }
 }
 
 .site-nav {
-	@include media($medium_screen) {
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
+    @include media($medium_screen) {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-	ul {
-		height: 0;
-		margin: 0;
-		overflow: hidden;
+    ul {
+        height: 0;
+        margin: 0;
+        overflow: hidden;
 
-		-webkit-transition: all 1s;
-		transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
 
-		@include media($medium_screen) {
-			display: block;
-			height: auto;
-		}
-		
-		li {
-			border-bottom: 1px solid #333;
-			padding: 10px;
+        @include media($medium_screen) {
+            display: block;
+            height: auto;
+        }
+        
+        li {
+            border-bottom: 1px solid #333;
+            padding: 10px;
 
-			@include media($medium_screen) {
-				border: 0;
-				padding: 0;
-			}
-		}
+            @include media($medium_screen) {
+                border: 0;
+                padding: 0;
+            }
+        }
 
-		&.show {
-			height: 147px;
-		}
-	}
+        &.show {
+            height: 147px;
+        }
+    }
 
-	li {
-		font-family: $font-sans;
-		margin: 0;
+    li {
+        font-family: $font-sans;
+        margin: 0;
 
-		@include media($medium_screen) {
-			display: inline-block;
-			float: left;
-		}
-	}
+        @include media($medium_screen) {
+            display: inline-block;
+            float: left;
+        }
+    }
 
-	a {
-		display: block;
-		width: 100%;
-		
-		@include media($medium_screen) {
-			display: inline-block;
-			padding: 0.8em 1.75em;
+    a {
+        display: block;
+        width: 100%;
+        
+        @include media($medium_screen) {
+            display: inline-block;
+            padding: 0.75em 1.75em;
 
-			&:hover {
-				background: $purple_dark;
-			}
-		}
-	}
+            &:hover {
+                background: $purple_dark;
+            }
+        }
+    }
 }
 
 .current-menu-item a,
 .single .site-nav li:last-child a {
-	@include media($medium_screen) {
-		background: $purple_base;
-	}
+    @include media($medium_screen) {
+        background: $purple_base;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -130,105 +130,105 @@
 --------------------------------------------------------------*/
 
 .home-header {
-	background: $black;
-	padding: 1.5em 0;
-	text-align: center;
+    background: $black;
+    padding: 1.5em 0;
+    text-align: center;
 
-	a, a:hover {
-		background: transparent;
-	}
+    a, a:hover {
+        background: transparent;
+    }
 }
 
 .home-header__img {
-	width: 5.5em;
+    width: 5.5em;
 }
 
 .home-header__h1 {
-	border-bottom: 1px solid $white;
-	letter-spacing: 2px;
-	margin: 0.1em $gutter_default 0;
-	padding-bottom: 0.5em;
+    border-bottom: 1px solid $white;
+    letter-spacing: 2px;
+    margin: 0.1em $gutter_default 0;
+    padding-bottom: 0.5em;
 
-	@include media($medium_screen) {
-		margin: 0.1em $gutter_medium 0;
-	}
+    @include media($medium_screen) {
+        margin: 0.1em $gutter_medium 0;
+    }
 
-	@include media($large_screen) {
-		margin: 0.1em $gutter_large 0;
-	}
+    @include media($large_screen) {
+        margin: 0.1em $gutter_large 0;
+    }
 
-	a {
-		color: $white;
-	}
+    a {
+        color: $white;
+    }
 }
 
 .home-header__p {
-	color: $white;
-	font-family: $font_sans;
-	margin: 2em $gutter_default 1em;
+    color: $white;
+    font-family: $font_sans;
+    margin: 2em $gutter_default 1em;
 
-	@include media($medium_screen) {
-		margin: 2em $gutter_medium 1em;
-	}
+    @include media($medium_screen) {
+        margin: 2em $gutter_medium 1em;
+    }
 
-	@include media($large_screen) {
-		margin: 2em $gutter_large 1em;
-	}
+    @include media($large_screen) {
+        margin: 2em $gutter_large 1em;
+    }
 }
 
 .home-nav {
-	display: inline-block;
-	width: 100%;
+    display: inline-block;
+    width: 100%;
 
-	ul {
-		margin: 0;
-	}
+    ul {
+        margin: 0;
+    }
 
-	li {
-		background: $purple_dark;
-		font-family: $font-sans;
-		margin: 0;
-		text-align: center;
+    li {
+        background: $purple_dark;
+        font-family: $font-sans;
+        margin: 0;
+        text-align: center;
 
-		-webkit-transition: all 1s;
-		transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
 
-		@include media($medium_screen) {
-			@include span-columns(4 of 12);
-			@include omega();
-			width: 33.33%;
-		}
+        @include media($medium_screen) {
+            @include span-columns(4 of 12);
+            @include omega();
+            width: 33.33%;
+        }
 
-		&:hover {
-			background: darken($purple_dark, 10%);
-		}
-	}
+        &:hover {
+            background: darken($purple_dark, 10%);
+        }
+    }
 
-	li:nth-child(2) {
-		background: $purple_base;
+    li:nth-child(2) {
+        background: $purple_base;
 
-		&:hover {
-			background: darken($purple_base, 10%);
-		}
-	}
+        &:hover {
+            background: darken($purple_base, 10%);
+        }
+    }
 
-	li:nth-child(3) {
-		background: $purple_light;
+    li:nth-child(3) {
+        background: $purple_light;
 
-		&:hover {
-			background: darken($purple_light, 10%);
-		}
-	}
+        &:hover {
+            background: darken($purple_light, 10%);
+        }
+    }
 
-	a {
-		background: transparent;
-		color: $white;
-		display: block;
-		padding: 1em 0;
-		width: 100%;
+    a {
+        background: transparent;
+        color: $white;
+        display: block;
+        padding: 1em 0;
+        width: 100%;
 
-		@include media($medium_screen) {
-			padding: 1.25em 0;
-		}
-	}
+        @include media($medium_screen) {
+            padding: 1.25em 0;
+        }
+    }
 }

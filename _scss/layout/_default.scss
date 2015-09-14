@@ -54,8 +54,8 @@ h4 {
 
 p, li { 
 	font-size: 1.1rem; 
-	line-height: 1.8rem; 
-	margin-bottom: 1rem;
+	line-height: 1.9rem; 
+	margin-bottom: 1.25rem;
 
 	strong {
 		font-weight: bold;
@@ -129,7 +129,7 @@ a.continue {
 	border-radius: 3px; 
 	color: $white; 
 	cursor: pointer; 
-	font-size: 0.9rem; 
+	font-size: 0.9rem;
 	padding: 0.75rem 1rem;
 }
 
@@ -140,6 +140,7 @@ a.continue {
 }
 
 a.continue {
+	font-size: 1rem;
 	position: relative;
 	top: 1em;
 }
