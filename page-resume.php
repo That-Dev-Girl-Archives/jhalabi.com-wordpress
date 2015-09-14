@@ -22,50 +22,64 @@ get_header(); ?>
 				<h2>Technical Skills</h2>
 			</header>
 
-			<div>
-				<div class="resume-skills__div">
-					<h3>Front-End Basics</h3>
-					<ul>
-						<li>HTML 5</li>
-						<li>CSS 3</li>
-						<li>SASS</li>
-						<li>Less</li>
-						<li>Bourbon / Neat</li>
-						<li>Foundation</li>
-						<li>Media Queries</li>
-					</ul>
-				</div>
+			<div class="resume-skills__div">
+				<p>
+					I have had a lot of exposure to many languages and technologies over the course of my 15+ year
+					career.  My focus started out on the very front-end, working solely on HTML and CSS; however I 
+					have spent more and more time since then on mid- to back-end technical stacks and love it.
+				</p>
 
-				<div class="resume-skills__div">
-					<h3>Javascript</h3>
-					<ul>
-						<li>Plain Ol' Javascript</li>
-						<li>jQuery</li>
-						<li>jQuery UI</li>
-						<li>Backbone</li>
-						<li>Marionette</li>
-						<li>Require</li>
-						<li>Jasmine</li>
-					</ul>
-				</div>
+				<p>
+					My favorite aspect of writing code is developing algorithms and solving technical problems (which,
+					honestly, is the entire point of writing code in the first place).  My love of patterns and 
+					efficient code stems from my extensive experience as a Javascript developer, but, lately I have
+					also been extending this to PHP development as well.
+				</p>
 
-				<div class="resume-skills__div">
-					<h3>CMS &amp; E-Commerce</h3>
-					<ul>
-						<li>WordPress</li>
-						<li>Drupal</li>
-						<li>Magento</li>
-						<li>Woo Commerce</li>
-					</ul>
-				</div>
+				<p>
+					Much of my professional development experience has been focused on internal corporate projects; 
+					however you can see code samples, widgets, and plugins that I have written on my code examples site:
+				</p>
 
-				<div class="resume-skills__div">
-					<h3>Languages</h3>
-					<ul>
-						<li>PHP</li>
-						<li>JSP</li>
-					</ul>
-				</div>
+				<p>
+					<a href="http://www.thatdevgirl.com" class="resume-skills--button">
+						<i class="fa fa-code"></i>
+						http://www.thatdevgirl.com
+					</a>
+				</p>
+			</div>
+
+			<div class="resume-skills__div">
+				<h3>Front-End Basics</h3>
+				<ul>
+					<li>HTML 5</li>
+					<li>CSS 3</li>
+					<li>SASS / Less</li>
+					<li>Bourbon Neat / Foundation</li>
+				</ul>
+
+				<h3>Javascript</h3>
+				<ul>
+					<li>Plain Ol' Javascript</li>
+					<li>jQuery / jQuery UI</li>
+					<li>Backbone / Marionette</li>
+					<li>Require</li>
+					<li>Jasmine</li>
+				</ul>
+
+				<h3>Languages &amp; Scripts</h3>
+				<ul>
+					<li>PHP</li>
+					<li>Gulp</li>
+					<li>JSP / JSTL</li>
+				</ul>
+
+				<h3>CMS &amp; E-Commerce</h3>
+				<ul>
+					<li>WordPress / WooCommerce</li>
+					<li>Drupal</li>
+					<li>Magento</li>
+				</ul>
 			</div>
 		</section>
 
@@ -113,16 +127,16 @@ get_header(); ?>
 		</section>
 
 		<section class="resume__section resume__section--social">
+			<a href="https://github.com/thatdevgirl" target="_blank">
+				<i class="fa fa-github"></i> GitHub
+			</a>
+
 			<a href="https://www.linkedin.com/in/jonihalabi" target="_blank">
 				<i class="fa fa-linkedin"></i> LinkedIn
 			</a>
 
 			<a href="https://careers.stackoverflow.com/jonihalabi" target="_blank">
 				<i class="fa fa-stack-overflow"></i> Stack Overflow
-			</a>
-
-			<a href="https://github.com/thatdevgirl" target="_blank">
-				<i class="fa fa-github"></i> GitHub repos
 			</a>
 
 			<a href="<?php echo the_field('resume_pdf'); ?>" target="_blank">

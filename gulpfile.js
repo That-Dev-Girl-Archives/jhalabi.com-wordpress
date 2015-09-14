@@ -12,7 +12,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build-css', function() {
-	return sass('_scss/', {style: 'compact'})
+	return sass('_scss/*', {style: 'compact'})
 	    .pipe(sourcemaps.write())
 	    .pipe(minifyCSS())
 	    .pipe(gulp.dest('css'));
