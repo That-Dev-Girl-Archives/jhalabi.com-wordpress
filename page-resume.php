@@ -60,7 +60,8 @@ get_header(); ?>
 
 				<h3>CMS &amp; E-Commerce</h3>
 				<ul class="last">
-					<li>WordPress / WooCommerce</li>
+					<li>WordPress</li>
+					<li>WooCommerce</li>
 					<li>Drupal</li>
 					<li>Magento</li>
 				</ul>
