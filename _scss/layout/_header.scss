@@ -90,7 +90,7 @@
         }
 
         &.show {
-            height: 147px;
+            height: 205px;
         }
     }
 
@@ -195,9 +195,9 @@
         transition: all 1s;
 
         @include media($medium_screen) {
-            @include span-columns(4 of 12);
+            @include span-columns(3 of 12);
             @include omega();
-            width: 33.33%;
+            width: 25%;
         }
 
         &:hover {
@@ -218,6 +218,14 @@
 
         &:hover {
             background: darken($purple_light, 10%);
+        }
+    }
+
+    li:nth-child(4) {
+        background: $purple_verylight;
+
+        &:hover {
+            background: darken($purple_verylight, 10%);
         }
     }
 

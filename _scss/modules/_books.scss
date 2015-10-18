@@ -1,6 +1,14 @@
 .books {
 	margin: 4em 0;
 
+	header {
+        @include full-width-header;
+
+        h2 {
+        	margin-bottom: 0;
+        }
+	}
+
 	ul {
 		list-style-type: square;
 		margin-left: 2em;
