@@ -33,12 +33,12 @@ get_header(); ?>
 				</p>
 			</div>
 
-			<div class="resume-skills__div">
+			<div class="resume-skills__div--list">
 				<h3>Front-End Basics</h3>
 				<ul>
 					<li>HTML 5</li>
 					<li>CSS 3</li>
-					<li>SASS / Less</li>
+					<li>Sass / Less</li>
 					<li>Bourbon Neat / Foundation</li>
 				</ul>
 
@@ -71,7 +71,7 @@ get_header(); ?>
 		<section class="resume__section resume__section--experience">
 			<header>
 				<h2>Atlantic Media Strategies</h2>
-				<p>January 2015 - present</p>
+				<p>January 2015 - October 2015</p>
 			</header>
 
 			<?php echo the_field('ams'); ?>

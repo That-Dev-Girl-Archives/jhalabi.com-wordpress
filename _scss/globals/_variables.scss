@@ -11,7 +11,7 @@ $grey_border: #aaa;
 $grey_border_dark: #666;
 
 $grey_bg_dark: #222;
-$grey_bg_light: #e6e1e4;
+$grey_bg_light: #eee;
 $grey_bg_verylight: #f6f6f6;
 $grey_bg: #ccc;
 
@@ -35,12 +35,17 @@ $medium_only: new-breakpoint(min-width 768px max-width 1024px 2);
 
 // Mixins
 @mixin full-width-header {
-	background: #eee;
+	background: $grey_bg_dark;
+	color: $white;
 	margin-bottom: 2em;
 	margin-left: -$gutter_default;
 	margin-right: -$gutter_default;
 	padding: 0.6em 1em;
 	text-align: center;
+
+	h2, p {
+		color: $white;
+	}
 
 	@include media($medium_screen) {
 		margin-left: -$gutter_medium;

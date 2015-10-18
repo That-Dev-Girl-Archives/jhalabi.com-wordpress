@@ -9,7 +9,7 @@ get_header(); ?>
 
 <?php if ( have_posts() ) : ?>
 	<header>
-		<h1><?php printf( __( 'Search Results for: %s', 'jhalabi' ), get_search_query() ); ?></h1>
+		<h1><?php printf( __( 'Search Results for: "%s"', 'jhalabi' ), get_search_query() ); ?></h1>
 	</header>
 
 	<section class="blog__section">
@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php get_template_part( 'content' ); ?>
 		<?php endwhile; ?>
 
-		<?php the_posts_navigation(); ?>
+		<?php jhalabi_posts_navigation(); ?>
 	</section>
 
 <?php else : ?>

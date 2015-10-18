@@ -33,26 +33,41 @@
     padding: 2em 0 0;
 
     @include media($medium_screen) {
-        @include span-columns(6 of 12);
-        @include omega(2n+1);
+        @include span-columns(7 of 12);
+
+        padding: 2em 2em 0 0;
+    }
+}
+
+.resume-skills__div--list {
+    padding: 2em 0 0;
+
+    @include media($medium_screen) {
+        @include span-columns(5 of 12);
+        @include omega();
 
         padding: 2em 2em 0;
     }
 
     h3 {
-        background: $grey_bg_light;
-        padding: 0.5em;
+        background: $grey_bg_dark;
+        color: $white;
+        font-weight: normal;
+        padding: 0.5em 1em;
     }
 
     ul {
-        margin: 1em 0 3em 1em;
+        border: solid $black;
+        border-width: 0 1px 1px;
+        margin: 0 0 3em;
+        padding: 1em;
 
         &:last-child {
     		margin-bottom: 0;
     	}
 
         @include media($medium_screen) {
-        	margin: 1em 0 1em 2em;
+        	margin: 0 0 2em;
 
         	&:last-child {
         		margin-bottom: 1em;
@@ -65,8 +80,8 @@
     }
 
     li:before {
-        content: "\2610";
-        margin-right: 10px;
+        content: "\2713";
+        margin-right: 8px;
     }
 }
 
@@ -113,7 +128,7 @@
 
 .resume__section--social {
     a {
-        background: lighten($purple_verylight, 20%);
+        background: lighten($purple_light, 30%);
         color: $black;
         display: block;
         font-family: $font_sans;
@@ -130,7 +145,7 @@
         }
 
         &:hover {
-            background: lighten($purple_verylight, 10%);
+            background: lighten($purple_light, 20%);
         }
 
         &:nth-child(2n) {
