@@ -120,7 +120,9 @@
 }
 
 .current-menu-item a,
-.single .site-nav li:last-child a {
+.single .site-nav li:nth-child(3) a,
+.category .site-nav li:nth-child(3) a,
+.photo-single .site-nav li:nth-child(2) a, {
     @include media($medium_screen) {
         background: $purple_base;
     }
@@ -182,7 +184,11 @@
     width: 100%;
 
     ul {
-        margin: 0;
+        margin: 0 0 2em;
+
+        @include media($medium_screen) {
+            margin-bottom: 0;
+        }
     }
 
     li {

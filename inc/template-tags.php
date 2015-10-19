@@ -107,3 +107,24 @@ if ( !function_exists('jhalabi_blog_categories') ):
 		}
 	}
 endif;
+
+if ( !function_exists('jhalabi_body_classes') ):
+	function jhalabi_body_classes($classes) {
+		global $post;
+
+		if (is_page()) {
+			if ($post->post_parent) {
+				$parent = get_post($post->post_parent);
+				$parent_slug = $parent->post_name;
+
+				if ($parent_slug == 'photos') {
+					array_push($classes, 'photo-single');
+				}
+			}
+		}
+		
+		return $classes;
+	}
+endif;
+
+add_filter('body_class', 'jhalabi_body_classes');

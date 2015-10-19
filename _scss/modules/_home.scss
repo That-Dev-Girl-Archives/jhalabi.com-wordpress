@@ -54,6 +54,10 @@
 
 	.site-content {
 		padding-bottom: 0;
+
+		@include media($medium_screen) {
+			padding-top: 3em;
+		}
 	}
 
 	.site-footer {
