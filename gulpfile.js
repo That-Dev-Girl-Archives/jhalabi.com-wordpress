@@ -11,6 +11,10 @@ gulp.task('watch', function() {
 	gulp.watch('_scss/**/*.scss', ['build-css']);
 });
 
+gulp.task('watch', function() {
+	gulp.watch('_js/**/*.js', ['build-js']);
+});
+
 gulp.task('build-css', function() {
 	return sass('_scss/*', {style: 'compact'})
 	    .pipe(sourcemaps.write())
