@@ -49,6 +49,7 @@ get_header(); ?>
 					<li>Backbone / Marionette</li>
 					<li>Require</li>
 					<li>Jasmine</li>
+					<li>Ember</li>
 				</ul>
 
 				<h3>Languages &amp; Scripts</h3>
@@ -66,6 +67,15 @@ get_header(); ?>
 					<li>Magento</li>
 				</ul>
 			</div>
+		</section>
+
+		<section class="resume__section resume__section--experience">
+			<header>
+				<h2>That Dev Girl</h2>
+				<p>October 2015 - present</p>
+			</header>
+
+			<?php echo the_field('thatdevgirl'); ?>
 		</section>
 
 		<section class="resume__section resume__section--experience">
