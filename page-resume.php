@@ -80,6 +80,15 @@ get_header(); ?>
 
 		<section class="resume__section resume__section--experience">
 			<header>
+				<h2>General Assembly</h2>
+				<p>December 2015 - present</p>
+			</header>
+
+			<?php echo the_field('ga'); ?>
+		</section>
+
+		<section class="resume__section resume__section--experience">
+			<header>
 				<h2>Atlantic Media Strategies</h2>
 				<p>January 2015 - October 2015</p>
 			</header>
