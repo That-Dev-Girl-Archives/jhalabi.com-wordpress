@@ -1,6 +1,6 @@
 <header class="site-header">
 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/joni-halabi-logo.png" alt="Joni Halabi" class="site-header__img" />
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/joni-halabi-logo.png" alt="Joni Halabi" class="site-header__img" />
 	</a>
 
 	<h1 class="site-header__h1">

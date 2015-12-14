@@ -56,10 +56,10 @@ add_action( 'after_setup_theme', 'jhalabi_setup' );
  * Enqueue scripts and styles.
  */
 function jhalabi_scripts() {
-	wp_enqueue_style( 'jhalabi-fontawesome', get_template_directory_uri() . '/css/vendor/font-awesome-4.3.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'jhalabi-fontawesome', get_template_directory_uri() . '/assets/css/vendor/font-awesome-4.3.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'jhalabi-style',       get_stylesheet_uri() );
 
-    wp_enqueue_script( 'jhalabi-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), '20150201', true );
+    wp_enqueue_script( 'jhalabi-scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '20150201', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
