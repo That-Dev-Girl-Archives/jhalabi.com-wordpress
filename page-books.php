@@ -18,6 +18,15 @@ get_header(); ?>
 			<?php the_content(); ?>
 		</section>
 
+		<?php if (get_field('books_2016')): ?>
+		<section class="books">
+			<header>
+				<h2>Books Read in 2016</h2>
+			</header>
+			<?php echo the_field('books_2016'); ?>
+		</section>
+		<?php endif; ?>
+
 		<section class="books">
 			<header>
 				<h2>Books Read in 2015</h2>
