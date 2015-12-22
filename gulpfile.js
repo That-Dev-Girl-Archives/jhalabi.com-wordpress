@@ -9,9 +9,6 @@ gulp.task('default', ['watch', 'build-css', 'build-js']);
 
 gulp.task('watch', function() {
 	gulp.watch('assets/_scss/**/*.scss', ['build-css']);
-});
-
-gulp.task('watch', function() {
 	gulp.watch('assets/_js/**/*.js', ['build-js']);
 });
 
