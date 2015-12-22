@@ -4,6 +4,7 @@
 1.0 Typography
 2.0 Forms
 3.0 Main content
+4.0 404 page
 
 /*--------------------------------------------------------------
 1.0 Typography
@@ -27,9 +28,14 @@ body {
 
 h1 { 
 	font-family: $font_sans; 
-	font-size: 3.5rem; 
-	line-height: 3.5rem; 
+	font-size: 2.5rem; 
+	line-height: 2.5rem; 
 	margin: 2rem 0 1rem;
+
+	@include media($large_screen) {
+		font-size: 3.5rem; 
+		line-height: 3.5rem; 
+	}
 }
 
 h2 { 
@@ -165,5 +171,36 @@ a.continue:hover {
 
 	@include media($large_screen) {
 		padding: 2em $gutter_large;
+	}
+}
+
+/*--------------------------------------------------------------
+4.0 404 page
+--------------------------------------------------------------*/
+
+.error-404 {
+	clear: both;
+	display: inline-block;
+	margin-bottom: 2em;
+}
+
+.error-404__div {
+	@include media($medium_screen) {
+		float: left;
+		padding-top: 2em;
+		width: 50%;
+	}
+}
+
+.error-404__div--dino {
+	background: url('../img/404-dino.png') $grey_bg_light no-repeat center center;
+	background-size: contain;
+	height: 12em;
+
+	@include media($medium_screen) {
+		float: left;
+		height: 15em;
+		margin-left: 2em;
+		width: calc(50% - 2em);
 	}
 }
