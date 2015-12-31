@@ -9,6 +9,7 @@
 .site-footer__section {
     display: inline-block;
     padding: 0 $gutter_default;
+    width: 100%;
 
     @include media($medium_screen) {
         padding: 0 $gutter_medium;
@@ -19,8 +20,8 @@
     }
 
     p {
-        font-size: 1em;
-        line-height: 1.35em;
+        font-size: 0.9em;
+        line-height: 1.65em;
         padding-right: 1em;
     }
 }
@@ -67,7 +68,8 @@
     }
 
     li {
-        font-size: 1em;
+        font-size: 0.9em;
+        line-height: 1.8em;
         margin: 0;
     }
 
@@ -87,8 +89,12 @@
 
     input {
         display: block;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
         padding: 8px;
+
+        &[type=search] {
+            width: 100%;
+        }
 
         &[type=submit] {
             font-size: 0.8em;

@@ -269,6 +269,10 @@
         font-size: 1em;
     }
 
+    h2 {
+        margin-bottom: 0;
+    }
+
     h2 b {
         color: $black;
         display: block;
@@ -295,4 +299,30 @@
 
 .navigation.posts-navigation {
     margin-top: 3em;
+}
+
+.nav-links {
+    .nav-previous {
+        float: left;
+
+        .fa {
+            padding-right: 5px;
+        }
+    }
+    
+    .nav-next {
+        float: right;
+
+        .fa {
+            padding-left: 5px;
+        }
+    }
+
+    a {
+        background: $black;
+        border-radius: 3px;
+        color: $white;
+        font-size: 1.2em;
+        padding: 0.5em 1em;
+    }
 }

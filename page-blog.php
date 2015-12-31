@@ -12,17 +12,21 @@
 
 get_header(); ?>
 
-<header>
-	<h1><?php the_title(); ?></h1>
-	<p>Articles about lots of things, both technical and not.</p>
-</header>
+<div class="site-wrapper">
+	<header>
+		<h1><?php the_title(); ?></h1>
+		<p>Articles about lots of things, both technical and not.</p>
+	</header>
+</div>
 
 <section class="blog__section--recent">
 	<?php jhalabi_blog_recent(); ?>
 </section>
 
 <section class="blog__section--topics">
-	<?php jhalabi_blog_categories(); ?>
+	<div class="site-wrapper">
+		<?php jhalabi_blog_categories(); ?>
+	</div>
 </section>
 
 <?php get_footer(); ?>

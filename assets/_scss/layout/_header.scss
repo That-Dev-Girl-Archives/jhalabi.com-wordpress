@@ -42,7 +42,7 @@
     display: inline;
     font-size: 2em;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 0 0 0 0.25em;
 }
 
 .site-nav a.site-nav__a--menu {
@@ -110,7 +110,7 @@
         
         @include media($medium_screen) {
             display: inline-block;
-            padding: 0.75em 1.75em;
+            padding: 0.58em 1.75em;
 
             &:hover {
                 background: $purple_dark;
@@ -168,14 +168,16 @@
 .home-header__p {
     color: $white;
     font-family: $font_sans;
-    margin: 2em $gutter_default 1em;
+    line-height: 1.5em;
+    margin: 1.5em $gutter_default 1em;
 
     @include media($medium_screen) {
-        margin: 2em $gutter_medium 1em;
+        margin: 1.5em $gutter_medium 1em;
     }
 
     @include media($large_screen) {
-        margin: 2em $gutter_large 1em;
+        margin: 1.5em auto 1em;
+        max-width: 600px;
     }
 }
 
@@ -243,7 +245,7 @@
         width: 100%;
 
         @include media($medium_screen) {
-            padding: 1.25em 0;
+            padding: 1em 0;
         }
     }
 }

@@ -18,7 +18,7 @@ $grey_bg: #ccc;
 
 // Gutters
 $gutter_default: 20px;
-$gutter_medium: 60px;
+$gutter_medium: 80px;
 $gutter_large: 100px;
 
 
@@ -27,10 +27,15 @@ $font_serif: Amethysta, serif;
 $font_sans: Raleway, sans-serif;
 
 
+// Widths
+$max_width: 1600px;
+
+
 // Breakpoints
-$medium_screen: new-breakpoint(min-width 768px 2);
-$large_screen: new-breakpoint(min-width 1025px 12);
-$medium_only: new-breakpoint(min-width 768px max-width 1024px 2);
+$medium_screen:  new-breakpoint(min-width 768px 2);
+$large_screen:   new-breakpoint(min-width 1025px 12);
+$exlarge_screen: new-breakpoint(min-width $max_width 12);
+$medium_only:    new-breakpoint(min-width 768px max-width 1024px 2);
 
 
 // Mixins

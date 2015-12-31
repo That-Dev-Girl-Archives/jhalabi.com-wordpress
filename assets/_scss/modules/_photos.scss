@@ -18,8 +18,15 @@
 		margin-top: 0;
 	}
 
+	.ngg-albumoverview {
+		display: flex !important;
+		flex-grow: 3;
+		flex-wrap: wrap;
+	}
+
 	.ngg-album-compact {
-		margin-bottom: 1em !important;
+		margin-bottom: 2em !important;
+		margin-top: 2em !important;
 		width: 100%; 
 
 		@include media($medium_screen) {
@@ -35,7 +42,6 @@
 
 		@include media($large_screen) {
 			@include span-columns(4 of 12);
-			height: 24em;
 			margin-right: 2.35% !important;
 
 			&:nth-child(3n) {

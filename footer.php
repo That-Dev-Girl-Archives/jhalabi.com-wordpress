@@ -23,7 +23,7 @@
 		</div>
 
 		<div class="site-footer__div">
-			<h4>Search all the things</h4>
+			<h4>Search</h4>
 			<?php get_search_form(); ?>
 		</div>
 	</section>

@@ -71,8 +71,8 @@ endif;
 if ( !function_exists('jhalabi_posts_navigation') ):
 	function jhalabi_posts_navigation() {
 		$args = array(
-			'prev_text'          => __( '<i class="fa fa-arrow-circle-left"></i> Older posts' ),
-            'next_text'          => __( '<i class="fa fa-arrow-circle-right"></i> Newer posts' ),
+			'prev_text'          => __( '<i class="fa fa-chevron-left"></i> Older posts' ),
+            'next_text'          => __( 'Newer posts <i class="fa fa-chevron-right"></i>' ),
             'screen_reader_text' => ' '
         );
 

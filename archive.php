@@ -9,10 +9,12 @@
 
 get_header(); ?>
 
-<header>
-	<h1><?php single_cat_title(); ?></h1>
-	<p><?php echo category_description(); ?></p>
-</header>
+<div class="site-wrapper">
+	<header>
+		<h1><?php single_cat_title(); ?></h1>
+		<p><?php echo category_description(); ?></p>
+	</header>
+</div>
 
 <section class="archive__section">
 	<?php if ( have_posts() ) : ?>
