@@ -250,6 +250,10 @@
 
 .archive__section {
     margin-top: 2em;
+
+    &.home {
+        margin-top: 0;
+    }
 }
 
 .excerpt__article {
@@ -283,12 +287,12 @@
     }
 
     @include media($medium_screen) {
-          margin: 0 calc(-1 * #{$gutter_medium});
+        margin: 0 calc(-1 * #{$gutter_medium});
         padding: 2em $gutter_medium 3em;
     }
 
     @include media($large_screen) {
-          margin: 0 calc(-1 * #{$gutter_large});
+        margin: 0 calc(-1 * #{$gutter_large});
         padding: 2em $gutter_large 3em;
     }
 }

@@ -10,10 +10,25 @@
 --------------------------------------------------------------*/
 
 .home-intro {
-	margin: 1em 0 4em;
+	margin: 1em 0;
 
 	b {
 		font-weight: bold;
+	}
+
+	&:nth-child(2n) {
+		background: $grey_bg_light;
+		padding-bottom: 2em;
+
+		@include media($medium_screen) {
+	        margin: 0 calc(-1 * #{$gutter_medium});
+	        padding: 3em $gutter_medium 5em;
+	    }
+
+	    @include media($large_screen) {
+	        margin: 0 calc(-1 * #{$gutter_large});
+	        padding: 3em $gutter_large 5em;
+	    }
 	}
 }
 
