@@ -18,7 +18,7 @@ get_header(); ?>
 
 	<section class="home-intro">
 		<div class="site-wrapper">
-			<h2><i>That Dev Girl</i> is Live!</h2>
+			<h2><b>That Dev Girl</b> is Live!</h2>
 			<p>I have officially started freelancing as an independent web developer and just launched my new and improved portfolio site.  I am working on a couple of sites now, but am always looking to meet potential new clients.  Check out out and spread the word!</p>
 			<a class="continue" href="http://www.thatdevgirl.com" target="_blank"><i class="fa fa-bookmark"></i> &nbsp; That Dev Girl</a>
 		</div>
