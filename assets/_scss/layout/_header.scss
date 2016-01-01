@@ -15,14 +15,12 @@
 
     @include media($medium_screen) {
         box-shadow: 0 1px 10px #444;
+        height: $header_height;
         padding: 0 0 0 $gutter;
+        position: fixed;   
         text-align: left;
-        width: 100%;
-    }
-
-    @include media($large_screen) {
-        position: fixed;
         top: 0;
+        width: 100%;
     }
 
     a, a:hover {
@@ -42,6 +40,7 @@
     display: inline;
     font-size: 2em;
     letter-spacing: 2px;
+    line-height: 3rem;
     margin: 0 0 0 0.25em;
 }
 
