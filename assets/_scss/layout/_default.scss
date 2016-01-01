@@ -18,7 +18,7 @@ body {
 	font-family: $font_serif;
 
 	@include media($medium_screen) {
-		margin-top: $header_height;
+		margin-top: calc(#{$header_height} + 12px);
 
 		&.home {
 			margin-top: 0;
