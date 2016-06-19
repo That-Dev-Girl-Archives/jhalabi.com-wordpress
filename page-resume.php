@@ -43,8 +43,8 @@ get_header(); ?>
 					<ul>
 						<li>HTML 5</li>
 						<li>CSS 3</li>
-						<li>Sass / Less</li>
-						<li>Bourbon Neat / Foundation</li>
+						<li>Sass, Compass, Less</li>
+						<li>Bootstrap 3 &amp; 4</li>
 					</ul>
 
 					<h3>Javascript</h3>
@@ -53,8 +53,8 @@ get_header(); ?>
 						<li>jQuery / jQuery UI</li>
 						<li>Backbone / Marionette</li>
 						<li>Require</li>
-						<li>Jasmine</li>
 						<li>Ember</li>
+						<li>Jasmine</li>
 					</ul>
 
 					<h3>Languages &amp; Scripts</h3>
@@ -66,12 +66,23 @@ get_header(); ?>
 
 					<h3>CMS &amp; E-Commerce</h3>
 					<ul class="last">
-						<li>WordPress</li>
-						<li>WooCommerce</li>
 						<li>Drupal</li>
+						<li>WordPress</li>
 						<li>Magento</li>
+						<li>WooCommerce</li>
 					</ul>
 				</div>
+			</div>
+		</section>
+
+		<section class="resume__section resume__section--experience">
+			<header>
+				<h2>Georgetown University</h2>
+				<p>January 2016 - present</p>
+			</header>
+
+			<div class="site-wrapper">
+				<?php echo the_field('georgetown'); ?>
 			</div>
 		</section>
 
