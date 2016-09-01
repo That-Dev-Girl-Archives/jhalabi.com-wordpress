@@ -24,7 +24,7 @@
 
 .resume-skills {
   header {
-	  margin-bottom: 0;
+	  margin-bottom: 1em;
 
 	  @include media($medium_screen) {
       margin-bottom: 2em;
@@ -89,7 +89,11 @@
   }
 
   ul {
-    margin: 1em 0 3em 3em;
+    margin: 1em 0 3em 1.5em;
+
+    @include media($medium_screen) {
+      margin: 1em 0 3em 3em;
+    }
   }
 
   li {
