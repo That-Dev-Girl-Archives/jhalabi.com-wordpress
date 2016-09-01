@@ -1,0 +1,98 @@
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: $font_serif;
+
+	@include media($medium_screen) {
+		margin-top: calc(#{$header_height} + 12px);
+
+		&.home {
+			margin-top: 0;
+		}
+	}
+}
+
+h1 {
+	font-family: $font_sans;
+	font-size: 2rem;
+	line-height: 2rem;
+	margin: 1rem 0;
+
+	@include media($large_screen) {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+}
+
+h2 {
+	color: $purple_base;
+	font-family: $font_sans;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-family: $font_serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: $font_sans;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+p, li {
+	font-size: 1rem;
+	line-height: 1.9rem;
+	margin-bottom: 1.25rem;
+
+	strong {
+		font-weight: bold;
+	}
+
+	em {
+		font-style: italic;
+	}
+}
+
+ul, ol {
+	margin: 1.5rem 1rem;
+}
+
+a {
+	color: $purple_base;
+	text-decoration: none;
+
+	&:hover {
+		background: $grey_bg_light;
+	}
+}
+
+a, input[type=submit] {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+
+pre[class*="language-"] {
+	background: none;
+	padding: 0;
+}
+
+code {
+	background: $grey_bg_light;
+	border: 1px solid $grey_border;
+	border-radius: 3px;
+	display: block;
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+br, section {
+	clear: both;
+	display: block;
+}

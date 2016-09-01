@@ -6,6 +6,9 @@
 @import "globals/variables";
 @import "globals/mixins";
 
+@import "globals/typography";
+@import "globals/forms";
+
 @import "layout/default";
 @import "layout/header";
 @import "layout/footer";
@@ -16,3 +19,4 @@
 @import "modules/books";
 @import "modules/home";
 @import "modules/search";
+@import "modules/404";

@@ -11,13 +11,15 @@ get_header(); ?>
 	<h1 class="columns">Congratulations!</h1>
 </header>
 
-<section class="error-404">
-	<div class="error-404__div">
-		<p>You found Dino's hiding place!  Dino has been sitting here <i>all day</i> waiting for you to stop by.</p>
-		<p>Dino is a great hider, but you are clearly a better seeker.  You rock!</p>
-	</div>
+<section class="error-404 error-404--bg">
+	<div class="error-404__div--inner">
+		<div class="error-404__div">
+			<p>You found Dino's hiding place!  Dino has been sitting here <i>all day</i> waiting for you to stop by.</p>
+			<p>Dino is a great hider, but you are clearly a better seeker.  You rock!</p>
+		</div>
 
-	<div class="error-404__div--dino">
+		<div class="error-404__div--dino">
+		</div>
 	</div>
 </section>
 

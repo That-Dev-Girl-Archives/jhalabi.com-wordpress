@@ -1,0 +1,59 @@
+.error-404 {
+	clear: both;
+	display: inline-block;
+	margin-bottom: 2em;
+
+  form {
+    label {
+      font-size: 1em;
+      font-weight: bold;
+    }
+
+    input[type=search] {
+      font-size: 1em;
+      margin: 0 0 0 0.5em;
+      width: 20em;
+    }
+  }
+}
+
+.error-404__div {
+	@include media($medium_screen) {
+		float: left;
+		padding-top: 2em;
+		width: 50%;
+	}
+}
+
+.error-404--bg {
+	@include full-width();
+	background: $grey_bg_light;
+  margin-top: 2em;
+  padding: 2em 0;
+	width: calc(100% + (#{$gutter_default} * 2));
+
+  @include media($medium_screen) {
+    width: calc(100% + (#{$gutter_medium} * 2));
+  }
+
+  @include media($large_screen) {
+    width: calc(100% + (#{$gutter_large} * 2));
+  }
+}
+
+.error-404__div--inner {
+	@include container(0.25em);
+}
+
+.error-404__div--dino {
+	background: url('../img/404-dino.png') $grey_bg_light no-repeat center center;
+	background-size: contain;
+	height: 12em;
+
+	@include media($medium_screen) {
+		float: left;
+		height: 15em;
+		margin-left: 2em;
+		width: calc(50% - 2em);
+	}
+}

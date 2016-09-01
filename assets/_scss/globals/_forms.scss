@@ -1,0 +1,48 @@
+form label, form p {
+	color: $black;
+	font-size: 0.9rem;
+}
+
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=search],
+textarea {
+	background: $white;
+	border: 1px solid $grey_border_dark;
+	border-radius: 3px;
+	box-shadow: none;
+	padding: 10px;
+}
+
+button,
+input[type=submit],
+a.comment-reply-link,
+a.continue {
+	background: $purple_base;
+	border: 0;
+	border-radius: 3px;
+	color: $white;
+	cursor: pointer;
+	font-size: 0.9rem;
+	padding: 0.75rem 1rem;
+}
+
+a.comment-reply-link,
+a.continue {
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+}
+
+a.continue {
+	font-size: 1rem;
+	position: relative;
+	top: 1em;
+}
+
+button:hover,
+input[type=submit]:hover,
+a.comment-reply-link:hover,
+a.continue:hover {
+	background: $purple_light;
+}
