@@ -10,12 +10,16 @@
 
 .photos__section {
 	padding-top: 2em;
-	
-	h2 {
+
+	header {
 		@include full-width-header;
-		
+
 		margin-bottom: 1em;
 		margin-top: 0;
+
+		h2 {
+			margin-bottom: 0;
+		}
 	}
 
 	.ngg-albumoverview {
@@ -27,7 +31,7 @@
 	.ngg-album-compact {
 		margin-bottom: 2em !important;
 		margin-top: 2em !important;
-		width: 100%; 
+		width: 100%;
 
 		@include media($medium_screen) {
 			@include span-columns(6 of 12);
@@ -37,7 +41,7 @@
 		@include media($medium_only) {
 			&:nth-child(2n) {
 				margin-right: 0 !important;
-			}		
+			}
 		}
 
 		@include media($large_screen) {
@@ -73,7 +77,7 @@
 			transition: all .35s;
 		}
 	}
- 
+
 	.ngg-album-compactbox,
 	.ngg-album-compactbox:before,
 	.ngg-album-compactbox:after {
@@ -133,7 +137,7 @@
 	}
 
 	@include media($large_screen) {
-		@include span-columns(3 of 12); 
+		@include span-columns(3 of 12);
 
 		&:nth-of-type(4n+1) {
 			@include omega;
@@ -165,12 +169,12 @@
 		margin: 0 0.5em !important;
 	}
 
-	a.page-numbers, a.next, a.prev, 
+	a.page-numbers, a.next, a.prev,
 	span.page-numbers, span.next, span.prev {
 		margin-right: 0.5em !important;
 	}
 
-	a.page-numbers:hover, a.next:hover, a.prev:hover, 
+	a.page-numbers:hover, a.next:hover, a.prev:hover,
 	span.page-numbers:hover, span.next:hover, span.prev:hover {
 		background: $purple_dark !important;
 	}

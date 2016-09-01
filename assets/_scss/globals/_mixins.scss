@@ -1,0 +1,35 @@
+@mixin container($top_padding: 2em) {
+  padding: ($top_padding/2) $gutter_default;
+
+	@include media($medium_screen) {
+		padding: $top_padding $gutter_medium;
+	}
+
+	@include media($large_screen) {
+		padding: $top_padding $gutter_large;
+	}
+}
+
+@mixin full-width-header {
+	background: darken($grey_bg_light, 5%);
+	color: $black;
+	margin-bottom: 2em;
+	margin-left: -$gutter_default;
+	margin-right: -$gutter_default;
+	padding: 0.6em 0;
+
+	h2, p {
+    @include container(0.25em);
+		color: $black;
+	}
+
+	@include media($medium_screen) {
+		margin-left: -$gutter_medium;
+		margin-right: -$gutter_medium;
+	}
+
+	@include media($large_screen) {
+		margin-left: -$gutter_large;
+		margin-right: -$gutter_large;
+	}
+}

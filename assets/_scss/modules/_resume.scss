@@ -1,173 +1,150 @@
 .resume__section {
-    display: inline-block;
+  display: inline-block;
+  margin-bottom: 3em;
+  width: 100%;
+
+  header {
+    @include full-width-header;
     margin-bottom: 3em;
-    width: 100%;
-
-    header {
-        @include full-width-header;
-        margin-bottom: 3em;
-
-        p {
-            margin: 0;
-        }
-    }
 
     h2 {
-        margin-bottom: 0;
+      margin-bottom: 0;
     }
 
-    strong {
-        font-weight: bold;
+    p {
+      margin: 0;
+      padding-top: 0;
     }
+  }
+
+  strong {
+    font-weight: bold;
+  }
 }
 
-.resume-skills header {
-	margin-bottom: 0;
+.resume-skills {
+  header {
+	  margin-bottom: 0;
 
-	@include media($medium_screen) {
-    	margin-bottom: 2em;
+	  @include media($medium_screen) {
+      margin-bottom: 2em;
     }
-}
+  }
 
-.resume-skills__div {
-    padding: 2em 0 0;
+  ul {
+    background: $grey_bg_light;
+    margin: 2em 0;
+    padding: 2em 0 1em 4em;
+  }
 
-    @include media($medium_screen) {
-        @include span-columns(7 of 12);
-
-        padding: 2em 2em 0 0;
-    }
-}
-
-.resume-skills__div--list {
-    padding: 2em 0 0;
-
-    @include media($medium_screen) {
-        @include span-columns(5 of 12);
-        @include omega();
-
-        padding: 2em 2em 0;
-    }
-
-    h3 {
-        background: $grey_bg_dark;
-        color: $white;
-        font-weight: normal;
-        padding: 0.5em 1em;
-    }
-
-    ul {
-        border: solid $black;
-        border-width: 0 1px 1px;
-        margin: 0 0 3em;
-        padding: 1em;
-
-        &:last-child {
-    		margin-bottom: 0;
-    	}
-
-        @include media($medium_screen) {
-        	margin: 0 0 2em;
-
-        	&:last-child {
-        		margin-bottom: 1em;
-        	}
-        }
-    }
-
-    li {
-        margin-bottom: 0.25em;
-    }
-
-    li:before {
-        content: "\2713";
-        margin-right: 8px;
-    }
+  li {
+    list-style-type: square;
+  }
 }
 
 .resume-skills--button {
-    background: $purple_base;
-    border-radius: 5px;
-    color: $white;
-    display: inline-block;
-    margin-top: 1em;
-    padding: 0.5em 1em;
+  background: $purple_base;
+  border-radius: 5px;
+  color: $white;
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1em;
 
-    &:hover {
-        background: $purple_dark;
-    }
+  &:hover {
+    background: $purple_dark;
+  }
 
-    i {
-        margin-right: 2px;
-        position: relative;
-        top: 1px;
-    }
+  i {
+    margin-right: 2px;
+    position: relative;
+    top: 1px;
+  }
 }
 
 .resume__section--experience {
-    p strong {
-        font-weight: bold;
-        font-size: 1.1em;
-        letter-spacing: 1px;
+  h3 {
+    font-size: 1em;
+    font-weight: normal;
+    padding-bottom: 0.25em;
+    text-transform: uppercase;
+  }
+
+  p {
+    strong {
+      color: $purple_dark;
+      display: block;
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      padding-bottom: 0.25em;
     }
 
-    ul {
-        margin-left: 3em;
+    em {
+      opacity: 0.65;
     }
 
-    li {
-        list-style-type: square;
+    br {
+      display: none;
     }
+  }
+
+  ul {
+    margin: 1em 0 3em 3em;
+  }
+
+  li {
+    list-style-type: square;
+  }
 }
 
 .resume__section--misc {
-    p {
-        margin-bottom: 2em;
-    }
+  p {
+    margin-bottom: 2em;
+  }
 }
 
 .resume__section--social {
-    a {
-        background: lighten($purple_light, 30%);
-        color: $black;
-        display: block;
-        font-family: $font_sans;
-        font-size: 1.2em;
-        margin-bottom: 1em;
-        padding: 2em;
-        text-align: center;
-        width: 100%;
+  a {
+    background: $purple_base;
+    color: $white;
+    display: block;
+    font-family: $font_sans;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    padding: 2em;
+    text-align: center;
+    width: 100%;
 
-        i {
-            display: block;
-            font-size: 2em;
-            margin-bottom: 0.35em;
-        }
-
-        &:hover {
-            background: lighten($purple_light, 20%);
-        }
-
-        &:nth-child(2n) {
-            background: $grey_bg_light;
-
-            &:hover {
-                background: darken($grey_bg_light, 10%);
-            }
-        }
-
-        @include media($medium_screen) {
-            @include span-columns(6 of 12);
-            height: 7.5em;
-        }
-
-        @include media($medium_only) {
-            @include omega(2n);
-        }
-
-        @include media($large_screen) {
-            @include span-columns(3 of 12);
-            height: 9em;
-        }
+    i {
+      display: block;
+      font-size: 2em;
+      margin-bottom: 0.35em;
     }
+
+    &:hover {
+      background: lighten($purple_base, 10%);
+    }
+
+    &:nth-child(2n) {
+      background: $grey_bg_dark;
+
+      &:hover {
+        background: lighten($grey_bg_dark, 20%);
+      }
+    }
+
+    @include media($medium_screen) {
+      @include span-columns(6 of 12);
+      height: 7.5em;
+    }
+
+    @include media($medium_only) {
+      @include omega(2n);
+    }
+
+    @include media($large_screen) {
+      @include span-columns(3 of 12);
+      height: 9em;
+    }
+  }
 }

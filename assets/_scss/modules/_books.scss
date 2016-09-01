@@ -2,11 +2,11 @@
 	margin: 4em 0;
 
 	header {
-        @include full-width-header;
+	  @include full-width-header;
 
-        h2 {
-        	margin-bottom: 0;
-        }
+	  h2 {
+	  	margin-bottom: 0;
+	  }
 	}
 
 	ol {

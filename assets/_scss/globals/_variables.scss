@@ -37,29 +37,3 @@ $medium_screen:  new-breakpoint(min-width 768px 2);
 $large_screen:   new-breakpoint(min-width 1025px 12);
 $exlarge_screen: new-breakpoint(min-width $max_width 12);
 $medium_only:    new-breakpoint(min-width 768px max-width 1024px 2);
-
-
-// Mixins
-@mixin full-width-header {
-	background: $grey_bg_dark;
-	color: $white;
-	margin-bottom: 2em;
-	margin-left: -$gutter_default;
-	margin-right: -$gutter_default;
-	padding: 0.6em 1em;
-	text-align: center;
-
-	h2, p {
-		color: $white;
-	}
-
-	@include media($medium_screen) {
-		margin-left: -$gutter_medium;
-		margin-right: -$gutter_medium;
-	}
-
-	@include media($large_screen) {
-		margin-left: -$gutter_large;
-		margin-right: -$gutter_large;
-	}
-}

@@ -3,6 +3,7 @@ var sass       = require('gulp-sass');
 var minifyCSS  = require('gulp-minify-css');
 var uglify     = require('gulp-uglify');
 var concat     = require('gulp-concat');
+var watch      = require('gulp-watch');
 
 gulp.task('default', ['watch', 'build-css', 'build-js']);
 
@@ -12,9 +13,10 @@ gulp.task('watch', function() {
 });
 
 gulp.task('build-css', function() {
-	return sass('assets/_scss/*', {style: 'compact'})
-	    .pipe(minifyCSS())
-	    .pipe(gulp.dest('assets/css'));
+	return gulp.src('assets/_scss/**/*.scss')
+		.pipe(sass().on('error', sass.logError))
+		.pipe(minifyCSS())
+		.pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('build-js', function() {
