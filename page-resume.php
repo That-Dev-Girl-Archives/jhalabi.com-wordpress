@@ -32,7 +32,7 @@ get_header(); ?>
 				<p>
 					<a href="http://www.thatdevgirl.com" target="_blank" class="resume-skills--button">
 						<i class="fa fa-code"></i>
-						http://www.thatdevgirl.com
+						Check out my portfolio!
 					</a>
 				</p>
 			</div>
