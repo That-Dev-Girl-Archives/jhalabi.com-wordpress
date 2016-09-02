@@ -84,10 +84,11 @@ pre[class*="language-"] {
 }
 
 code {
-	background: $grey_bg_light;
+	background: $grey_bg_verylight;
 	border: 1px solid $grey_border;
 	border-radius: 3px;
 	display: block;
+	font-family: Courier, monospace;
 	margin-bottom: 2rem;
 	padding: 1rem;
 }
