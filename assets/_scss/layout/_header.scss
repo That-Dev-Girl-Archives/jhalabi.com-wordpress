@@ -40,7 +40,7 @@
   display: inline;
   font-size: 2em;
   letter-spacing: 2px;
-  line-height: 3rem;
+  line-height: 1.5;
   margin: 0 0 0 0.25em;
 }
 
@@ -79,6 +79,7 @@
 
     li {
       border-bottom: 1px solid #333;
+      font-size: 1rem;
       padding: 10px;
 
       @include media($medium_screen) {
@@ -166,7 +167,8 @@
 .home-header__p {
   color: $white;
   font-family: $font_sans;
-  line-height: 1.5em;
+  font-size: 1rem;
+  line-height: 1.5;
   margin: 1.5em $gutter_default 1em;
 
   @include media($medium_screen) {
@@ -194,6 +196,7 @@
   li {
     background: $purple_dark;
     font-family: $font-sans;
+    font-size: 1rem;
     margin: 0;
     text-align: center;
 

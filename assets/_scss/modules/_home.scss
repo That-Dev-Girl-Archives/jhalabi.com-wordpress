@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 
 .home-intro {
-	margin: 1em 0;
+	margin: 1em 0 3em;
 
 	b {
 		font-weight: bold;
@@ -61,6 +61,10 @@
 	@include media($large-screen) {
 		@include span_columns(6 of 12);
 		float: right;
+	}
+
+	p {
+		font-size: 1.1rem;
 	}
 }
 

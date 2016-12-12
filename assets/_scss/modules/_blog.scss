@@ -22,6 +22,11 @@
       background: lighten($purple_verylight, 15%);
     }
 
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
     @include media($medium_screen) {
       @include span-columns(6 of 12);
       height: 280px;
@@ -65,7 +70,7 @@
 .single {
   .posted-on {
     font-size: 1em;
-    margin: 0 0.5em;
+    margin: 0;
   }
 
   .entry {
@@ -282,7 +287,7 @@
     display: block;
     font-size: 0.65em;
     font-weight: bold;
-    line-height: 1em;
+    line-height: 1;
     margin-bottom: 0.5em;
   }
 
