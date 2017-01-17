@@ -22,6 +22,18 @@ get_header(); ?>
 			</div>
 		</section>
 
+		<?php if (get_field('books_2017')): ?>
+		<section class="books">
+			<header>
+				<h2>Books Read in 2017</h2>
+			</header>
+
+			<div class="site-wrapper">
+				<?php echo the_field('books_2017'); ?>
+			</div>
+		</section>
+		<?php endif; ?>
+
 		<?php if (get_field('books_2016')): ?>
 		<section class="books">
 			<header>
