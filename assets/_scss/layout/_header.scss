@@ -38,8 +38,9 @@
 
 .site-header__h1 {
   display: inline;
+  font-family: $font_sans;
   font-size: 2em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.5;
   margin: 0 0 0 0.25em;
 }
@@ -109,7 +110,7 @@
 
     @include media($medium_screen) {
       display: inline-block;
-      padding: 0.58em 1.75em;
+      padding: 0.72em 1.75em;
 
       &:hover {
         background: $purple_dark;
@@ -147,7 +148,8 @@
 
 .home-header__h1 {
   border-bottom: 1px solid $white;
-  letter-spacing: 2px;
+  font-family: $font_sans;
+  letter-spacing: 1px;
   margin: 0.1em $gutter_default 0;
   padding-bottom: 0.5em;
 
@@ -167,8 +169,8 @@
 .home-header__p {
   color: $white;
   font-family: $font_sans;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.4;
   margin: 1.5em $gutter_default 1em;
 
   @include media($medium_screen) {

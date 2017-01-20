@@ -75,7 +75,7 @@
 
   .entry {
     ol, ul {
-      margin-left: 4em;
+      margin-left: 3em;
     }
 
     ul {
@@ -276,6 +276,7 @@
   .posted-on {
     color: $grey_border_dark;
     font-size: 1em;
+    margin-bottom: 1em;
   }
 
   h2 {

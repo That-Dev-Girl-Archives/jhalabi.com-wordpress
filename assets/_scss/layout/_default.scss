@@ -1,5 +1,5 @@
 .site-content {
-	@include container();
+	@include container(1em);
 }
 
 .site-wrapper {
