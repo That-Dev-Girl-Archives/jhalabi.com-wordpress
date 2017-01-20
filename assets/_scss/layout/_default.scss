@@ -1,5 +1,7 @@
 .site-content {
-	@include container(1em);
+	@include container(1.5em);
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
 }
 
 .site-wrapper {
