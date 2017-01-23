@@ -193,6 +193,16 @@
         @include span-columns(10 of 12);
         @include omega;
     }
+
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+
+      &.aligncenter {
+        margin: 0 auto;
+      }
+    }
 }
 
 /*--------------------------------------------------------------

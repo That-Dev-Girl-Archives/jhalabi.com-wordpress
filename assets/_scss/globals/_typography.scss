@@ -93,6 +93,13 @@ code {
 	padding: 1rem;
 }
 
+blockquote {
+	border-left: 0.25em solid #5d0f44;
+	font-style: italic;
+	margin: 1em 0;
+	padding-left: 1em;
+}
+
 br, section {
 	clear: both;
 	display: block;
