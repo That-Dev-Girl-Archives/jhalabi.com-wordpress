@@ -48,6 +48,16 @@ get_header(); ?>
 			</div>
 		</section>
 
+    <section class="resume__section resume__section--experience" aria-label="Conference speaking and teaching">
+			<header aria-label="Current work section header">
+				<h2>Conference Speaking and Teaching</h2>
+			</header>
+
+			<div class="site-wrapper">
+				<?php echo the_field('speaking'); ?>
+			</div>
+		</section>
+
 		<section class="resume__section resume__section--experience" aria-label="Previous experience">
 			<header aria-label="Previous experience section header">
 				<h2>Previous Professional Experience</h2>
