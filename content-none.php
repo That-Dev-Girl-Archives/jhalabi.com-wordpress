@@ -8,11 +8,11 @@
  */
 ?>
 
-<header>
+<header aria-label="Page header">
 	<h1><?php _e( 'Nothing Found', 'jhalabi' ); ?></h1>
 </header>
 
-<section class="no-results not-found">
+<section class="no-results not-found" aria-label="No results found">
 	<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 		<p><?php printf( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'jhalabi' ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
 

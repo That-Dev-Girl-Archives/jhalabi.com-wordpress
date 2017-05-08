@@ -9,14 +9,14 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<section class="home-intro">
+	<section class="home-intro" aria-label="Introduction text">
 		<div class="site-wrapper">
 			<h2><?php echo the_field('tag_line'); ?></h2>
 			<?php echo the_field('intro_text'); ?>
 		</div>
 	</section>
 
-	<section class="home-intro">
+	<section class="home-intro" aria-label="About my consulting business">
 		<div class="site-wrapper">
 			<h2><b>That Dev Girl</b> is Live!</h2>
 			<p>I have officially started freelancing as an independent web developer and just launched my new and improved portfolio site.  I am working on a couple of sites now, but am always looking to meet potential new clients.  Check out out and spread the word!</p>
@@ -24,7 +24,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="archive__section home">
+	<section class="archive__section home" aria-label="Latest blog article">
 		<?php query_posts('showposts=1'); ?>
 		<?php while (have_posts()) : the_post(); ?>
 

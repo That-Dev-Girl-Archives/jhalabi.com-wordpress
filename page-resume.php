@@ -10,19 +10,19 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="site-wrapper">
-			<header class="page-header">
+			<header class="page-header" aria-label="Page header">
 				<h1 class="columns"><?php the_title(); ?></h1>
 			</header>
 		</div>
 
-		<section class="resume__section">
+		<section class="resume__section" aria-label="Resume introduction">
 			<div class="site-wrapper">
 				<?php the_content(); ?>
 			</div>
 		</section>
 
-		<section class="resume-skills resume__section">
-			<header>
+		<section class="resume-skills resume__section" aria-label="Technical skills">
+			<header aria-label="Technical skills section header">
 				<h2>Technical Skills</h2>
 			</header>
 
@@ -38,8 +38,8 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--experience">
-			<header>
+		<section class="resume__section resume__section--experience" aria-label="Current work">
+			<header aria-label="Current work section header">
 				<h2>Current Work</h2>
 			</header>
 
@@ -48,8 +48,8 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--experience">
-			<header>
+		<section class="resume__section resume__section--experience" aria-label="Previous experience">
+			<header aria-label="Previous experience section header">
 				<h2>Previous Professional Experience</h2>
 			</header>
 
@@ -58,8 +58,8 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--misc">
-			<header>
+		<section class="resume__section resume__section--misc" aria-label="Education">
+			<header aria-label="Education section header">
 				<h2>Degrees and Certifications</h2>
 			</header>
 
@@ -68,8 +68,8 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--misc">
-			<header>
+		<section class="resume__section resume__section--misc" aria-label="Volunteer work">
+			<header aria-label="Volunteer work section header">
 				<h2>Community Involvement</h2>
 			</header>
 
@@ -78,7 +78,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--social">
+		<section class="resume__section resume__section--social" aria-label="Resume links">
 			<a href="https://github.com/thatdevgirl" target="_blank">
 				<i class="fa fa-github"></i> GitHub
 			</a>

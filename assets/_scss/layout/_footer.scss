@@ -6,7 +6,7 @@
   padding: 2em 0 1em;
 }
 
-.site-footer__section {
+.site-footer__block {
   display: inline-block;
   padding: 0 $gutter_default;
   width: 100%;
@@ -26,8 +26,9 @@
   }
 }
 
-.site-footer__div {
+.site-footer__section {
   border-top: 1px solid $white;
+  clear: none;
   margin-bottom: 2em;
   padding-top: 1em;
 
@@ -110,7 +111,7 @@
   }
 }
 
-.site-footer__div--wide {
+.site-footer__section--wide {
   @include media($large_screen) {
     @include span-columns(6 of 12);
   }

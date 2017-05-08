@@ -139,6 +139,7 @@
 
   a, a:hover {
     background: transparent;
+    color: $white;
   }
 }
 
@@ -159,10 +160,6 @@
 
   @include media($large_screen) {
     margin: 0.1em $gutter_large 0;
-  }
-
-  a {
-    color: $white;
   }
 }
 

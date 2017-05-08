@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<header>
+<header aria-label="Page header">
 	<h1 class="columns">Congratulations!</h1>
 </header>
 

@@ -13,17 +13,17 @@
 get_header(); ?>
 
 <div class="site-wrapper">
-	<header>
+	<header aria-label="Page header">
 		<h1><?php the_title(); ?></h1>
 		<p>Articles about lots of things, both technical and not.</p>
 	</header>
 </div>
 
-<section class="blog__section--recent">
+<section class="blog__section--recent" aria-label="Recent articles">
 	<?php jhalabi_blog_recent(); ?>
 </section>
 
-<section class="blog__section--topics">
+<section class="blog__section--topics" aria-label="Category list">
 	<div class="site-wrapper">
 		<?php jhalabi_blog_categories(); ?>
 	</div>

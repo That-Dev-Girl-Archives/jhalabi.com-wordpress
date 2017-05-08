@@ -10,13 +10,13 @@
 get_header(); ?>
 
 <div class="site-wrapper">
-	<header>
+	<header aria-label="Page header">
 		<h1><?php single_cat_title(); ?></h1>
 		<p><?php echo category_description(); ?></p>
 	</header>
 </div>
 
-<section class="archive__section">
+<section class="archive__section" aria-label="Blog article list">
 	<?php if ( have_posts() ) : ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>

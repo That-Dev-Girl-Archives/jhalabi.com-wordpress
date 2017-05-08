@@ -10,20 +10,20 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="site-wrapper">
-			<header>
+			<header aria-label="Page header">
 				<h1><?php the_title(); ?></h1>
 				<p>Because... you know... books are awesome!</p>
 			</header>
 		</div>
 
-		<section class="intro">
+		<section class="intro" aria-label="Introductory text">
 			<div class="site-wrapper">
 				<?php the_content(); ?>
 			</div>
 		</section>
 
 		<?php if (get_field('books_2017')): ?>
-		<section class="books">
+		<section class="books" aria-label="Books read in 2017">
 			<header>
 				<h2>Books Read in 2017</h2>
 			</header>
@@ -34,8 +34,7 @@ get_header(); ?>
 		</section>
 		<?php endif; ?>
 
-		<?php if (get_field('books_2016')): ?>
-		<section class="books">
+		<section class="books" aria-label="Books read in 2016">
 			<header>
 				<h2>Books Read in 2016</h2>
 			</header>
@@ -44,9 +43,8 @@ get_header(); ?>
 				<?php echo the_field('books_2016'); ?>
 			</div>
 		</section>
-		<?php endif; ?>
 
-		<section class="books">
+		<section class="books" aria-label="Books read in 2015">
 			<header>
 				<h2>Books Read in 2015</h2>
 			</header>
@@ -56,7 +54,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="books">
+		<section class="books" aria-label="Books read in 2014">
 			<header>
 				<h2>Books Read in 2014</h2>
 			</header>
@@ -66,7 +64,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="books">
+		<section class="books" aria-label="Books read in 2013">
 			<header>
 				<h2>Books Read in 2013</h2>
 			</header>
@@ -76,7 +74,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="books">
+		<section class="books" aria-label="Books read in 2012">
 			<header>
 				<h2>Books Read in 2012</h2>
 			</header>
@@ -86,7 +84,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="books">
+		<section class="books" aria-label="Books read in 2011">
 			<header>
 				<h2>Books Read in 2011</h2>
 			</header>
@@ -96,7 +94,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="books">
+		<section class="books" aria-label="Books read in 2010">
 			<header>
 				<h2>Books Read in 2010</h2>
 			</header>
