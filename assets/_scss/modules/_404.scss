@@ -1,4 +1,5 @@
 .error-404 {
+  @include full-width();
 	clear: both;
 	display: inline-block;
 	margin-bottom: 2em;
@@ -25,28 +26,13 @@
 	}
 }
 
-.error-404--bg {
-	@include full-width();
-	background: $grey_bg_light;
-  margin-top: 2em;
-  padding: 2em 0;
-	width: calc(100% + (#{$gutter_default} * 2));
-
-  @include media($medium_screen) {
-    width: calc(100% + (#{$gutter_medium} * 2));
-  }
-
-  @include media($large_screen) {
-    width: calc(100% + (#{$gutter_large} * 2));
-  }
-}
-
 .error-404__div--inner {
 	@include container(0.25em);
+  clear: both;
 }
 
 .error-404__div--dino {
-	background: url('../img/404-dino.png') $grey_bg_light no-repeat center center;
+	background: url('../img/404-dino.png') no-repeat center center;
 	background-size: contain;
 	height: 12em;
 
