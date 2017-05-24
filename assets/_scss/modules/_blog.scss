@@ -45,11 +45,25 @@
 }
 
 .blog__section--recent {
+  background: $grey_bg;
   margin: 3em calc(-1 * #{$gutter_default}) 0;
   padding: 0 $gutter_default;
 
-  h2 b {
-    color: $black;
+  article {
+    float: none;
+    padding: 3em 0;
+    width: 100%;
+  }
+
+  .excerpt__article header {
+    background: transparent;
+    padding: 0;
+
+    h2 a,
+    h2 a:hover,
+    .posted-on {
+      color: black;
+    }
   }
 
   @include media($medium_screen) {
@@ -187,22 +201,22 @@
 }
 
 .entry__div--content {
-    max-width: 60em;
+  max-width: 60em;
 
-    @include media($large_screen) {
-        @include span-columns(10 of 12);
-        @include omega;
+  @include media($large_screen) {
+      @include span-columns(10 of 12);
+      @include omega;
+  }
+
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+
+    &.aligncenter {
+      margin: 0 auto;
     }
-
-    img {
-      display: block;
-      height: auto;
-      max-width: 100%;
-
-      &.aligncenter {
-        margin: 0 auto;
-      }
-    }
+  }
 }
 
 /*--------------------------------------------------------------
@@ -272,44 +286,48 @@
 }
 
 .excerpt__article {
-  margin: 0 calc(-1 * #{$gutter_default});
-  padding: 2em $gutter_default;
+  padding: 1em 1em 5em 0;
 
-  &:nth-child(2n+1) {
-    background-color: $grey_bg_light;
+  header {
+    background: $grey_bg_dark;
+    border-radius: 3px;
+    margin-bottom: 1em;
+    padding: 1em;
 
-    h2 a:hover {
-      background: darken($grey_bg_light, 10%);
+    h2 a {
+      color: $white;
+
+      &:hover {
+        background: transparent;
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+
+    .posted-on {
+      color: $purple_verylight;
+      font-size: 1em;
+      margin-bottom: 0;
     }
   }
 
-  .posted-on {
-    color: $grey_border_dark;
-    font-size: 1em;
-    margin-bottom: 1em;
-  }
-
-  h2 {
-    margin-bottom: 0;
-  }
-
-  h2 b {
-    color: $black;
-    display: block;
-    font-size: 0.65em;
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 0.5em;
+  .entry-content {
+    a.continue {
+      top: 0;
+    }
   }
 
   @include media($medium_screen) {
-    margin: 0 calc(-1 * #{$gutter_medium});
-    padding: 2em $gutter_medium 3em;
+    @include span-columns(6 of 12);
+  }
+
+  @include media($medium_only) {
+    @include omega(2n);
   }
 
   @include media($large_screen) {
-    margin: 0 calc(-1 * #{$gutter_large});
-    padding: 2em $gutter_large 3em;
+    @include span-columns(4 of 12);
+    @include omega(3n);
   }
 }
 
@@ -318,7 +336,8 @@
 }
 
 .navigation.posts-navigation {
-  margin-top: 3em;
+  clear: both;
+  margin-bottom: 2em;
 }
 
 .nav-links {
