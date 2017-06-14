@@ -42,12 +42,18 @@
 2.0 Recent post section
 --------------------------------------------------------------*/
 
+.archive__section.home {
+  margin: 0 calc((100vw - 100%) / 2 * -1);
+  width: 100vw;
+}
+
 .excerpt__article.home {
 	background: url('../img/photo-bg-home.jpg');
 	background-position: 50%;
 	background-size: cover;
 	display: inline-block;
 	opacity: 0.95;
+  width: 100%;
 
 	div h2 a:hover {
 		background: $grey_bg_light;
@@ -73,10 +79,6 @@
 --------------------------------------------------------------*/
 
 .home {
-	& > br {
-		display: none;
-	}
-
 	.site-content {
 		padding-bottom: 0;
 
