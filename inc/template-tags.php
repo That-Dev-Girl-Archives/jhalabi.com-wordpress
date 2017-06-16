@@ -94,7 +94,7 @@ endif;
 if ( !function_exists('jhalabi_blog_categories') ):
 	function jhalabi_blog_categories() {
 		$cats = get_categories();
-		
+
 		foreach ($cats as $cat) {
 			$link = get_category_link($cat->term_id);
 
@@ -122,9 +122,14 @@ if ( !function_exists('jhalabi_body_classes') ):
 				}
 			}
 		}
-		
+
 		return $classes;
 	}
 endif;
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 add_filter('body_class', 'jhalabi_body_classes');

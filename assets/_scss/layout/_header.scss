@@ -185,11 +185,7 @@
   width: 100%;
 
   ul {
-    margin: 0 0 2em;
-
-    @include media($medium_screen) {
-      margin-bottom: 0;
-    }
+    margin: 0;
   }
 
   li {

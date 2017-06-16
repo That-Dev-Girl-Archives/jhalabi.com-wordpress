@@ -6,7 +6,7 @@ body {
 	font-family: $font_sans;
 
 	@include media($medium_screen) {
-		margin-top: calc(#{$header_height} + 12px);
+		margin-top: $header_height;
 
 		&.home {
 			margin-top: 0;

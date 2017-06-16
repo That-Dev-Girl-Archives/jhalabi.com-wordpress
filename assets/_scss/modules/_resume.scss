@@ -1,25 +1,50 @@
 .resume__section {
   display: inline-block;
-  margin-bottom: 3em;
   width: 100%;
 
   header {
-    @include full-width-header;
-    margin-bottom: 3em;
+    margin: 1em 0 2em;
 
     h2 {
       line-height: 1;
       margin-bottom: 0;
     }
-
-    p {
-      margin: 0;
-      padding-top: 0;
-    }
   }
 
   strong {
     font-weight: bold;
+  }
+
+  &:nth-child(2n+1) {
+    background: $grey_bg_verylight;
+    margin-left: calc((100vw - 100%)/2*-1);
+    margin-right: calc((100vw - 100%)/2*-1);
+    width: 100vw;
+
+    & > div {
+      @include container(1.5em);
+    }
+  }
+
+  & > div {
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+  }
+
+  &--speaking {
+    ul {
+      margin-bottom: 2em;
+    }
+
+    li {
+      margin-bottom: 0.75em;
+    }
+  }
+
+  &--social {
+    display: inline-block;
+    margin-bottom: 2em;
+    width: 100%;
   }
 }
 
@@ -33,13 +58,17 @@
   }
 
   ul {
-    background: $grey_bg_light;
     margin: 2em 0;
-    padding: 2em 0 1em 4em;
+    padding: 1em 0 1em 2em;
+
+    @include media($medium_screen) {
+      padding: 2em 0 1em 4em;
+    }
   }
 
   li {
     list-style-type: square;
+    margin-bottom: 0.75em;
   }
 }
 

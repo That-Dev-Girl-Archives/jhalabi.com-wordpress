@@ -1,7 +1,5 @@
 </main><!-- #content -->
 
-<br />
-
 <footer class="site-footer">
 	<div class="site-footer__block">
 		<section class="site-footer__section" aria-label="Blog categories">
