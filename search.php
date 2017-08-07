@@ -12,7 +12,7 @@ get_header(); ?>
 		<h1><?php printf( __( 'Search Results for: "%s"', 'jhalabi' ), get_search_query() ); ?></h1>
 	</header>
 
-	<section class="blog__section" aria-label="Search results">
+	<section class="archive" aria-label="Search results">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content' ); ?>
 		<?php endwhile; ?>
