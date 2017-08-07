@@ -127,10 +127,10 @@
  * Highlights for current page nav items.
  */
 
-.current-menu-item a,
-.single .site-nav li:nth-child(3) a,
-.category .site-nav li:nth-child(3) a,
-.photo-single .site-nav li:nth-child(2) a, {
+.site-header .current-menu-item a,
+.single .site-nav li:nth-child(2) a,
+.category .site-nav li:nth-child(2) a,
+.photo-single .site-nav li:nth-child(1) a, {
   @include media($medium_screen) {
     background: $purple_base;
   }
