@@ -1,12 +1,6 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS
-----------------------------------------------------------------
-1.0 Primary header
-2.0 Home header
-
-/*--------------------------------------------------------------
-1.0 Primary header
---------------------------------------------------------------*/
+/* -----
+ * Site header for content pages.
+ */
 
 .site-header {
   background: $black;
@@ -26,30 +20,36 @@
   a, a:hover {
     background: transparent;
     color: $white;
+    text-decoration: none;
+  }
+
+  h1 {
+    display: inline;
+    font-family: $font_sans;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0 0 0 0.25rem;
+  }
+
+  img {
+    display: inline;
+    position: relative;
+    top: 4px;
+    width: 2rem;
   }
 }
 
-.site-header__img {
-  display: inline;
-  position: relative;
-  top: 4px;
-  width: 2em;
-}
 
-.site-header__h1 {
-  display: inline;
-  font-family: $font_sans;
-  font-size: 2em;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  margin: 0 0 0 0.25em;
-}
+/* -----
+ * Navigation for content pages.
+ */
 
-.site-nav a.site-nav__a--menu {
+.site-nav a.menu {
   background: $purple_dark;
   display: block;
   font-family: $font-sans;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   padding: 10px;
   width: 100%;
 
@@ -67,6 +67,7 @@
   }
 
   ul {
+    background: $grey_bg_dark;
     height: 0;
     margin: 0;
     overflow: hidden;
@@ -74,12 +75,13 @@
     transition: all 1s;
 
     @include media($medium_screen) {
+      background: none;
       display: block;
       height: auto;
     }
 
     li {
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid $grey_border_dark;
       font-size: 1rem;
       padding: 10px;
 
@@ -90,7 +92,7 @@
     }
 
     &.show {
-      height: 205px;
+      height: 185px;
     }
   }
 
@@ -106,11 +108,12 @@
 
   a {
     display: block;
+    text-decoration: none;
     width: 100%;
 
     @include media($medium_screen) {
       display: inline-block;
-      padding: 0.72em 1.75em;
+      padding: 0.72rem 1.75rem;
 
       &:hover {
         background: $purple_dark;
@@ -119,129 +122,16 @@
   }
 }
 
+
+/* -----
+ * Highlights for current page nav items.
+ */
+
 .current-menu-item a,
 .single .site-nav li:nth-child(3) a,
 .category .site-nav li:nth-child(3) a,
 .photo-single .site-nav li:nth-child(2) a, {
   @include media($medium_screen) {
     background: $purple_base;
-  }
-}
-
-/*--------------------------------------------------------------
-2.0 Home header
---------------------------------------------------------------*/
-
-.home-header {
-  background: $black;
-  padding: 1.5em 0;
-  text-align: center;
-
-  a, a:hover {
-    background: transparent;
-    color: $white;
-  }
-}
-
-.home-header__img {
-  width: 5.5em;
-}
-
-.home-header__h1 {
-  border-bottom: 1px solid $white;
-  font-family: $font_sans;
-  letter-spacing: 1px;
-  margin: 0.1em $gutter_default 0;
-  padding-bottom: 0.5em;
-
-  @include media($medium_screen) {
-    margin: 0.1em $gutter_medium 0;
-  }
-
-  @include media($large_screen) {
-    margin: 0.1em $gutter_large 0;
-  }
-}
-
-.home-header__p {
-  color: $white;
-  font-family: $font_sans;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin: 1.5em $gutter_default 1em;
-
-  @include media($medium_screen) {
-    margin: 1.5em $gutter_medium 1em;
-  }
-
-  @include media($large_screen) {
-    margin: 1.5em auto 1em;
-    max-width: 600px;
-  }
-}
-
-.home-nav {
-  display: inline-block;
-  width: 100%;
-
-  ul {
-    margin: 0;
-  }
-
-  li {
-    background: $purple_dark;
-    font-family: $font-sans;
-    font-size: 1rem;
-    margin: 0;
-    text-align: center;
-
-    -webkit-transition: all 1s;
-    transition: all 1s;
-
-    @include media($medium_screen) {
-      @include span-columns(3 of 12);
-      @include omega();
-      width: 25%;
-    }
-
-    &:hover {
-      background: darken($purple_dark, 10%);
-    }
-  }
-
-  li:nth-child(2) {
-    background: $purple_base;
-
-    &:hover {
-      background: darken($purple_base, 10%);
-    }
-  }
-
-  li:nth-child(3) {
-    background: $purple_light;
-
-    &:hover {
-      background: darken($purple_light, 10%);
-    }
-  }
-
-  li:nth-child(4) {
-    background: $purple_verylight;
-
-    &:hover {
-      background: darken($purple_verylight, 10%);
-    }
-  }
-
-  a {
-    background: transparent;
-    color: $white;
-    display: block;
-    padding: 1em 0;
-    width: 100%;
-
-    @include media($medium_screen) {
-      padding: 1em 0;
-    }
   }
 }

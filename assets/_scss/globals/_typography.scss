@@ -31,18 +31,18 @@ h2 {
 	font-family: $font_serif;
 	font-size: 1.6rem;
 	line-height: 1.4;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5rem;
 }
 
 h3 {
 	font-family: $font_sans;
-	font-size: 1.4em;
+	font-size: 1.4rem;
 	font-weight: bold;
 }
 
 h4 {
 	font-family: $font_serif;
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 
@@ -51,11 +51,11 @@ p, li {
 	line-height: 1.6;
 	margin-bottom: 1.5rem;
 
-	strong {
+	strong, b {
 		font-weight: bold;
 	}
 
-	em {
+	em, i {
 		font-style: italic;
 	}
 }
@@ -66,11 +66,15 @@ ul, ol {
 
 a {
 	color: $purple_base;
-	text-decoration: none;
 
 	&:hover {
 		background: $grey_bg_light;
+    text-decoration: none;
 	}
+
+  &.icon {
+    text-decoration: none;
+  }
 }
 
 a, input[type=submit] {
@@ -94,10 +98,10 @@ code {
 }
 
 blockquote {
-	border-left: 0.25em solid #5d0f44;
+	border-left: 0.25rem solid #5d0f44;
 	font-style: italic;
-	margin: 1em 0;
-	padding-left: 1em;
+	margin: 1rem 0;
+	padding-left: 1rem;
 }
 
 br, section {
@@ -105,7 +109,8 @@ br, section {
 	display: block;
 }
 
-.sr-only {
+.sr-only,
+.screen-reader-text {
   height: 1px;
   left: -10000px;
   overflow: hidden;

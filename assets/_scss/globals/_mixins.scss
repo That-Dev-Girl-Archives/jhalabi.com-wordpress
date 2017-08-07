@@ -1,4 +1,4 @@
-@mixin container($top_padding: 2em) {
+@mixin container($top_padding: 2rem) {
   padding: ($top_padding/2) $gutter_default;
 
 	@include media($medium_screen) {
@@ -29,11 +29,11 @@
   @include full-width();
 	background: darken($grey_bg_light, 5%);
 	color: $black;
-	margin-bottom: 2em;
-	padding: 0.35em 0;
+	margin-bottom: 2rem;
+	padding: 0.35rem 0;
 
 	h2, p {
-    @include container(0.25em);
+    @include container(0.25rem);
 		color: $black;
 	}
 }

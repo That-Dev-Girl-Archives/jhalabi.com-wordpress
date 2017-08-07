@@ -1,0 +1,123 @@
+/* -----
+ * Site header for the home page.
+ */
+
+.home-header {
+  background: $black;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  img {
+    width: 5.5rem;
+  }
+
+  h1 {
+    border-bottom: 1px solid $white;
+    font-family: $font_sans;
+    letter-spacing: 1px;
+    margin: 0.1rem $gutter_default 0;
+    padding-bottom: 0.5rem;
+
+    @include media($medium_screen) {
+      margin: 0.1rem $gutter_medium 0;
+    }
+
+    @include media($large_screen) {
+      margin: 0.1rem $gutter_large 0;
+    }
+  }
+
+  a, a:hover {
+    background: none;
+    color: $white;
+    text-decoration: none;
+  }
+
+  p {
+    color: $white;
+    font-family: $font_sans;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 1.5rem $gutter_default 1rem;
+
+    @include media($medium_screen) {
+      margin: 1.5rem $gutter_medium 1rem;
+    }
+
+    @include media($large_screen) {
+      margin: 1.5rem auto 1rem;
+      max-width: 600px;
+    }
+  }
+}
+
+/* -----
+ * Navigation for the home page.
+ */
+
+.home-nav {
+  display: inline-block;
+  width: 100%;
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    background: $purple_dark;
+    font-family: $font-sans;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+
+    -webkit-transition: all 1s;
+    transition: all 1s;
+
+    @include media($medium_screen) {
+      @include span-columns(3 of 12);
+      @include omega();
+      width: 25%;
+    }
+
+    &:hover {
+      background: darken($purple_dark, 10%);
+    }
+  }
+
+  li:nth-child(2) {
+    background: $purple_base;
+
+    &:hover {
+      background: darken($purple_base, 10%);
+    }
+  }
+
+  li:nth-child(3) {
+    background: $purple_light;
+
+    &:hover {
+      background: darken($purple_light, 10%);
+    }
+  }
+
+  li:nth-child(4) {
+    background: $purple_verylight;
+
+    &:hover {
+      background: darken($purple_verylight, 10%);
+    }
+  }
+
+  a {
+    background: transparent;
+    color: $white;
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none;
+    width: 100%;
+
+    @include media($medium_screen) {
+      padding: 1rem 0;
+    }
+  }
+}

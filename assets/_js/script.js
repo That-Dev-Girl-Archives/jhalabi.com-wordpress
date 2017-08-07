@@ -1,5 +1,5 @@
 // Show/hide for mobile menu.
-var menu = document.querySelector('.site-nav__a--menu');
+var menu = document.querySelector('.site-nav .menu');
 
 if (menu) {
 	menu.addEventListener('click', function() {
