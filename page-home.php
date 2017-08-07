@@ -19,22 +19,29 @@ get_header(); ?>
 	<section class="home-intro" aria-label="About my consulting business">
 		<div class="site-wrapper">
 			<h2><b>That Dev Girl</b> is Live!</h2>
-			<p>I have officially started freelancing as an independent web developer and just launched my new and improved portfolio site.  I am working on a couple of sites now, but am always looking to meet potential new clients.  Check out out and spread the word!</p>
-			<a class="continue" href="http://www.thatdevgirl.com" target="_blank"><i class="fa fa-bookmark"></i> &nbsp; That Dev Girl</a>
+			<p>
+        I am a web developer with a full time job, but I also enjoy spreading my wings
+        with freelance projects.  <a href="http://www.thatdevgirl.com">That Dev Girl</a> is
+        my official consulting website and features both my portfolio of websites and tools,
+        as well as articles about coding, web accessibility, and random tech tips. Check it out!
+      </p>
+			<a class="btn" href="http://www.thatdevgirl.com">
+        <span class="fa fa-bookmark"></span> That Dev Girl
+      </a>
 		</div>
 	</section>
 
-	<section class="archive__section home" aria-label="Latest blog article">
+	<section class="excerpt-section" aria-label="Latest blog article">
 		<?php query_posts('showposts=1'); ?>
 		<?php while (have_posts()) : the_post(); ?>
 
-			<article class="excerpt__article home">
+			<article>
 				<div class="site-wrapper">
-					<div class="excerpt__div">
-						<h2><b>Latest Post:</b> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<?php jhalabi_posted_on(); ?>
+					<div class="excerpt">
+            <?php jhalabi_posted_on(); ?>
+						<h2>Latest Post: <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<?php the_excerpt(); ?>
-						<p><a href="<?php the_permalink(); ?>" class="continue">Read more...</a></p>
+						<a href="<?php the_permalink(); ?>" class="btn" aria-label="Read more about <?php the_title(); ?>">Read more...</a>
 					</div>
 				</div>
 			</article>

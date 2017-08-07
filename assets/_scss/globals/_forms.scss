@@ -18,31 +18,22 @@ textarea {
 button,
 input[type=submit],
 a.comment-reply-link,
-a.continue {
+a.btn {
 	background: $purple_base;
 	border: 0;
 	border-radius: 3px;
 	color: $white;
 	cursor: pointer;
-	font-size: 0.9rem;
-	padding: 0.75rem 1rem;
-}
-
-a.comment-reply-link,
-a.continue {
-	padding: 0.5rem 1rem;
-	text-decoration: none;
-}
-
-a.continue {
+  display: inline-block;
 	font-size: 1.1rem;
-	position: relative;
-	top: 1rem;
-}
+	padding: 0.75rem 1rem;
+  text-decoration: none;
 
-button:hover,
-input[type=submit]:hover,
-a.comment-reply-link:hover,
-a.continue:hover {
-	background: $black;
+  &:hover {
+    background: $black;
+  }
+
+  span.fa {
+    margin-right: 0.5rem;
+  }
 }

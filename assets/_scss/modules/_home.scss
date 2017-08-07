@@ -1,16 +1,9 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS
-----------------------------------------------------------------
-1.0 Home intro section
-2.0 Recent post section
-3.0 Bridging the gap at the bottom of the page
-
-/*--------------------------------------------------------------
-1.0 Home intro section
---------------------------------------------------------------*/
+/* -----
+ * Home intro section
+ */
 
 .home-intro {
-	margin: 1em 0 3em;
+	margin: 2em 0 4em;
 
 	b {
 		font-weight: bold;
@@ -20,75 +13,16 @@
 		background: $grey_bg_light;
 		padding-bottom: 2em;
 		margin: 0 calc(-1 * #{$gutter_default});
-	    padding: 3em $gutter_default 6em;
+	  padding: 3em $gutter_default 4em;
 
 		@include media($medium_screen) {
-	        margin: 0 calc(-1 * #{$gutter_medium});
-	        padding: 3em $gutter_medium 8em;
-	    }
+      margin: 0 calc(-1 * #{$gutter_medium});
+      padding: 4em $gutter_medium 6em;
+    }
 
-	    @include media($large_screen) {
-	        margin: 0 calc(-1 * #{$gutter_large});
-	        padding: 3em $gutter_large 8em;
-	    }
-	}
-
-	h2 b {
-		font-weight: bold;
-	}
-}
-
-/*--------------------------------------------------------------
-2.0 Recent post section
---------------------------------------------------------------*/
-
-.archive__section.home {
-  margin: 0 calc((100vw - 100%) / 2 * -1);
-  width: 100vw;
-}
-
-.excerpt__article.home {
-	background: url('../img/photo-bg-home.jpg');
-	background-position: 50%;
-	background-size: cover;
-	display: inline-block;
-	opacity: 0.95;
-  padding: 2em;
-  width: 100%;
-
-	div h2 a:hover {
-		background: $grey_bg_light;
-	}
-}
-
-.excerpt__div {
-	background: $white;
-	padding: 2em;
-
-	@include media($large-screen) {
-		@include span_columns(6 of 12);
-		float: right;
-	}
-
-	p {
-		font-size: 1.1rem;
-	}
-}
-
-/*--------------------------------------------------------------
-3.0 Bridging the gap at the bottom of the page
---------------------------------------------------------------*/
-
-.home {
-	.site-content {
-		padding-bottom: 0;
-
-		@include media($medium_screen) {
-			padding-top: 3em;
-		}
-	}
-
-	.site-footer {
-		margin-top: 0;
+    @include media($large_screen) {
+      margin: 0 calc(-1 * #{$gutter_large});
+      padding: 4em $gutter_large 6em;
+    }
 	}
 }

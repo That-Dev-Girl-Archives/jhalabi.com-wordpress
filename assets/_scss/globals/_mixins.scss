@@ -1,12 +1,12 @@
 @mixin container($top_padding: 2rem) {
-  padding: ($top_padding/2) $gutter_default;
+  padding: ($top_padding/2) $gutter_default 0;
 
 	@include media($medium_screen) {
-		padding: $top_padding $gutter_medium;
+		padding: $top_padding $gutter_medium 0;
 	}
 
 	@include media($large_screen) {
-		padding: $top_padding $gutter_large;
+		padding: $top_padding $gutter_large 0;
 	}
 }
 

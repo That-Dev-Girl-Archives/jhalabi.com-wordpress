@@ -20,7 +20,7 @@
 
 		<div class="entry-content">
 			<?php the_excerpt(); ?>
-			<?php printf( '<p><a href="%s" rel="bookmark" class="continue">Read more</a></p>', esc_url( get_permalink() ) ); ?>
+			<?php printf( '<p><a href="%s" rel="bookmark" class="btn">Read more</a></p>', esc_url( get_permalink() ) ); ?>
 		</div>
 	</div>
 </article>

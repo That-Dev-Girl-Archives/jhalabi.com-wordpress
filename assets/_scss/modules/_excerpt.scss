@@ -1,0 +1,43 @@
+.excerpt-section {
+  border-bottom: 2px solid $white;
+  margin: 0 calc((100vw - 100%) / 2 * -1);
+  width: 100vw;
+
+  @include media($large-screen) {
+    border-bottom: 0;
+  }
+
+  article {
+  	background: url('../img/photo-bg-home.jpg');
+  	background-position: 50%;
+  	background-size: cover;
+  	display: inline-block;
+  	opacity: 0.95;
+    padding: 4rem 2rem;
+    width: 100%;
+  }
+}
+
+.excerpt {
+	background: $white;
+	padding: 2rem;
+
+	@include media($large-screen) {
+		@include span_columns(6 of 12);
+		float: right;
+	}
+
+  h2 {
+    color: $black;
+    margin-bottom: 1rem;
+  }
+
+	p {
+		font-size: 1.1rem;
+	}
+
+  .posted-on {
+    font-size: 0.9rem;
+    margin: 0 0 1rem;
+  }
+}
