@@ -8,10 +8,10 @@
 get_header(); ?>
 
 <header aria-label="Page header">
-	<h1>Topic: <?php single_tag_title(); ?></h1>
+	<h1>Tag: <?php single_tag_title(); ?></h1>
 </header>
 
-<section class="blog__section" aria-label="Blog articles">
+<section class="archive" aria-label="Blog article list">
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', get_post_format() ); ?>

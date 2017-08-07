@@ -14,11 +14,14 @@
 @import "layout/header-home";
 @import "layout/footer";
 
+@import "modules/home";
+
+@import "modules/post";
+@import "modules/excerpt";
+@import "modules/archive";
+
 @import "modules/resume";
 @import "modules/photos";
-@import "modules/blog";
 @import "modules/books";
-@import "modules/home";
-@import "modules/excerpt";
 @import "modules/search";
 @import "modules/404";

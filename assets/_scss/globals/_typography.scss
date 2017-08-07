@@ -30,7 +30,7 @@ h1 {
 h2 {
 	color: $purple_base;
 	font-family: $font_serif;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	line-height: 1.4;
 	margin-bottom: 0.5rem;
 }
@@ -39,6 +39,7 @@ h3 {
 	font-family: $font_sans;
 	font-size: 1.4rem;
 	font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -99,9 +100,9 @@ code {
 }
 
 blockquote {
-	border-left: 0.25rem solid #5d0f44;
+	border-left: 0.25rem solid $purple_dark;
 	font-style: italic;
-	margin: 1rem 0;
+	margin: 2rem 0;
 	padding-left: 1rem;
 }
 

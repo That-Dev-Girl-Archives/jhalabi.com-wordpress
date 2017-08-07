@@ -72,11 +72,11 @@ if ( !function_exists('jhalabi_posts_navigation') ):
 	function jhalabi_posts_navigation() {
 		$args = array(
 			'prev_text'          => __( '<i class="fa fa-chevron-left"></i> Older posts' ),
-            'next_text'          => __( 'Newer posts <i class="fa fa-chevron-right"></i>' ),
-            'screen_reader_text' => ' '
-        );
+      'next_text'          => __( 'Newer posts <i class="fa fa-chevron-right"></i>' ),
+      'screen_reader_text' => 'Blog article pagination'
+    );
 
-        the_posts_navigation($args);
+    the_posts_navigation($args);
 	}
 endif;
 
@@ -102,7 +102,7 @@ if ( !function_exists('jhalabi_blog_categories') ):
 
 			$html  = sprintf( __('<h2><a href="%s">%s</a></h2>', 'jhalabi'), $link, $cat->name );
 			$html .= '<p>' . $cat->description . '</p>';
-			$html .= sprintf( __('<p><a href="%s" rel="bookmark" class="btn">Read %s Posts</a></p>', 'jhalabi'), $link, $posts_count );
+			$html .= sprintf( __('<p><a href="%s" rel="bookmark" class="btn" aria-label="Read %s posts about %s">Read %s Posts</a></p>', 'jhalabi'), $link, $posts_count, $cat->name, $posts_count );
 			echo '<article>' . $html . '</article>';
 		}
 	}
