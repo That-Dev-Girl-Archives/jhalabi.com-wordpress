@@ -19,69 +19,51 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="resume-skills resume__section" aria-label="Technical skills">
+		<section class="resume__section" aria-label="Technical skills">
       <div>
-  			<header aria-label="Technical skills section header">
-  				<h2>Technical Skills</h2>
-  			</header>
-
+  			<h2>Technical Skills</h2>
 				<?php echo the_field('technical_skills'); ?>
+        <br>
 
 				<p>
-					<a href="http://www.thatdevgirl.com" target="_blank" class="resume-skills--button">
-						<i class="fa fa-code"></i>
-						Check out my portfolio!
+					<a href="http://www.thatdevgirl.com" class="btn">
+						<span class="fa fa-code"></span> Check out my portfolio!
 					</a>
 				</p>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--experience" aria-label="Current work">
+		<section class="resume__section experience" aria-label="Current work">
       <div>
-        <header aria-label="Current work section header">
-  				<h2>Current Work</h2>
-  			</header>
-
+				<h2>Current Work</h2>
 				<?php echo the_field('current_work'); ?>
 			</div>
 		</section>
 
-    <section class="resume__section resume__section--experience resume__section--speaking" aria-label="Conference speaking and teaching">
+    <section class="resume__section experience" aria-label="Conference speaking and teaching">
       <div>
-        <header aria-label="Current work section header">
-  				<h2>Conference Speaking and Teaching</h2>
-  			</header>
-
+				<h2>Conference Speaking and Teaching</h2>
 				<?php echo the_field('speaking'); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--experience" aria-label="Previous experience">
+		<section class="resume__section experience" aria-label="Previous experience">
       <div>
-        <header aria-label="Previous experience section header">
-  				<h2>Previous Professional Experience</h2>
-  			</header>
-
+				<h2>Previous Professional Experience</h2>
 				<?php echo the_field('previous_work'); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--misc" aria-label="Education">
+		<section class="resume__section" aria-label="Education">
 			<div>
-        <header aria-label="Education section header">
-  				<h2>Degrees and Certifications</h2>
-  			</header>
-
+				<h2>Degrees and Certifications</h2>
 				<?php echo the_field('education'); ?>
 			</div>
 		</section>
 
-		<section class="resume__section resume__section--misc" aria-label="Volunteer work">
+		<section class="resume__section" aria-label="Volunteer work">
       <div>
-  			<header aria-label="Volunteer work section header">
-  				<h2>Community Involvement</h2>
-  			</header>
-
+				<h2>Community Involvement</h2>
 				<?php echo the_field('community_involvement'); ?>
 			</div>
 		</section>
@@ -89,19 +71,19 @@ get_header(); ?>
 		<section class="resume__section--social" aria-label="Resume links">
       <div>
   			<a href="https://github.com/thatdevgirl" target="_blank">
-  				<i class="fa fa-github"></i> GitHub
+  				<span class="fa fa-github"></span> GitHub
   			</a>
 
   			<a href="https://www.linkedin.com/in/jonihalabi" target="_blank">
-  				<i class="fa fa-linkedin"></i> LinkedIn
+  				<span class="fa fa-linkedin"></span> LinkedIn
   			</a>
 
   			<a href="https://careers.stackoverflow.com/jonihalabi" target="_blank">
-  				<i class="fa fa-stack-overflow"></i> Stack Overflow
+  				<span class="fa fa-stack-overflow"></span> Stack Overflow
   			</a>
 
   			<a href="<?php echo the_field('resume_pdf'); ?>" target="_blank">
-  				<i class="fa fa-file-pdf-o"></i> Resume PDF
+  				<span class="fa fa-file-pdf-o"></span> Resume PDF
   			</a>
       </div>
 		</section>
