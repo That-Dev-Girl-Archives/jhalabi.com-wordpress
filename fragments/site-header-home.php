@@ -9,6 +9,6 @@
 	</div>
 </header>
 
-<nav class="home-nav" aria-label="Main site navigation">
+<nav class="home-nav">
 	<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
 </nav>

@@ -4,7 +4,7 @@
     <h1>Joni Halabi</h1>
 	</a>
 
-	<nav class="site-nav" aria-label="Main navigation menu">
+	<nav class="site-nav">
 		<a href="#" class="menu">Menu</a>
 		<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
 	</nav>

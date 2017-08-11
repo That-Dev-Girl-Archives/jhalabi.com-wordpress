@@ -1,7 +1,7 @@
 .books {
 	margin: 4em 0;
 
-	header {
+	.full-width {
 	  @include full-width-header;
 
 	  h2 {

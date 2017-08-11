@@ -24,9 +24,9 @@ get_header(); ?>
 
 		<?php if (get_field('books_2017')): ?>
 		<section class="books" aria-label="Books read in 2017">
-			<header>
-				<h2>Books Read in 2017</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2017</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2017'); ?>
@@ -35,9 +35,9 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<section class="books" aria-label="Books read in 2016">
-			<header>
-				<h2>Books Read in 2016</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2016</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2016'); ?>
@@ -45,9 +45,9 @@ get_header(); ?>
 		</section>
 
 		<section class="books" aria-label="Books read in 2015">
-			<header>
-				<h2>Books Read in 2015</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2015</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2015'); ?>
@@ -55,9 +55,9 @@ get_header(); ?>
 		</section>
 
 		<section class="books" aria-label="Books read in 2014">
-			<header>
-				<h2>Books Read in 2014</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2014</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2014'); ?>
@@ -65,9 +65,9 @@ get_header(); ?>
 		</section>
 
 		<section class="books" aria-label="Books read in 2013">
-			<header>
-				<h2>Books Read in 2013</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2013</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2013'); ?>
@@ -75,9 +75,9 @@ get_header(); ?>
 		</section>
 
 		<section class="books" aria-label="Books read in 2012">
-			<header>
-				<h2>Books Read in 2012</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2012</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2012'); ?>
@@ -85,9 +85,9 @@ get_header(); ?>
 		</section>
 
 		<section class="books" aria-label="Books read in 2011">
-			<header>
-				<h2>Books Read in 2011</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2011</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2011'); ?>
@@ -95,9 +95,9 @@ get_header(); ?>
 		</section>
 
 		<section class="books" aria-label="Books read in 2010">
-			<header>
-				<h2>Books Read in 2010</h2>
-			</header>
+      <div class="full-width">
+         <h2>Books Read in 2010</h2>
+      </div>
 
 			<div class="site-wrapper">
 				<?php echo the_field('books_2010'); ?>
