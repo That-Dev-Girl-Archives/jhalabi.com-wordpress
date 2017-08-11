@@ -11,19 +11,19 @@
 .post-topics {
   border: solid $grey_border;
   border-width: 1px 0;
-  margin: 2em 0 3em;
-  padding: 1em 0.5em;
+  margin: 2rem 0 3rem;
+  padding: 1rem 0.5rem;
 
   .topic {
     display: block;
-    margin-right: 2em;
+    margin-right: 2rem;
 
     @include media($medium_screen) {
       display: inline;
     }
 
     &:first-child {
-      margin-bottom: 2em;
+      margin-bottom: 2rem;
 
       @include media($medium_screen) {
         margin-bottom: 0;
@@ -32,7 +32,7 @@
 
     b {
       display: inline-block;
-      width: 4.5em;
+      width: 4.5rem;
 
       @include media($medium_screen) {
         display: inline;
@@ -133,12 +133,12 @@
 
     ul {
       list-style-type: square;
-      margin-left: 3em;
+      margin-left: 3rem;
     }
 
     ol {
       list-style-type: decimal;
-      margin-left: 3em;
+      margin-left: 3rem;
     }
   }
 }
@@ -149,7 +149,7 @@
  */
 
 .comments {
-  margin: 4em 0;
+  margin: 4rem 0;
 
   label {
     display: block;
@@ -166,7 +166,7 @@
   }
 
   input[type=submit] {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     padding: 20px 10px;
   }
 
@@ -185,11 +185,11 @@
 
   li {
     background: $grey_bg_light;
-    padding: 1em;
+    padding: 1rem;
   }
 
   p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 
   p:first-child {
@@ -198,5 +198,5 @@
 }
 
 .single ul.comments-area__ul {
-  margin-bottom: 4em;
+  margin-bottom: 4rem;
 }

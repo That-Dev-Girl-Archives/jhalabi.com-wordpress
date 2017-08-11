@@ -2,18 +2,18 @@
   @include full-width();
 	clear: both;
 	display: inline-block;
-	margin-bottom: 2em;
+	margin-bottom: 4rem;
 
   form {
     label {
-      font-size: 1em;
+      font-size: 1rem;
       font-weight: bold;
     }
 
     input[type=search] {
-      font-size: 1em;
-      margin: 0 0 0 0.5em;
-      width: 20em;
+      font-size: 1rem;
+      margin: 0 0 0 0.5rem;
+      width: 20rem;
     }
   }
 }
@@ -21,25 +21,25 @@
 .error-404__div {
 	@include media($medium_screen) {
 		float: left;
-		padding-top: 2em;
+		padding-top: 2rem;
 		width: 50%;
 	}
 }
 
 .error-404__div--inner {
-	@include container(0.25em);
+	@include container(0.25rem);
   clear: both;
 }
 
 .error-404__div--dino {
 	background: url('../img/404-dino.png') no-repeat center center;
 	background-size: contain;
-	height: 12em;
+	height: 12rem;
 
 	@include media($medium_screen) {
 		float: left;
-		height: 15em;
-		margin-left: 2em;
-		width: calc(50% - 2em);
+		height: 15rem;
+		margin-left: 2rem;
+		width: calc(50% - 2rem);
 	}
 }

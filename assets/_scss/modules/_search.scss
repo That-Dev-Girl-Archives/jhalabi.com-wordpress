@@ -9,3 +9,13 @@
 		}
 	}
 }
+
+.no-results {
+  margin-bottom: 4rem;
+
+  input[type=search] {
+    padding: 0.85rem 10px;
+    position: relative;
+    top: -2px;
+  }
+}
