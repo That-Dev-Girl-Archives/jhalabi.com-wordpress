@@ -1,36 +1,21 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS
-----------------------------------------------------------------
-1.0 Photo gallery page
-2.0 Photo album page
+.photos {
+	padding: 2rem 0;
 
-/*--------------------------------------------------------------
-1.0 Photo gallery page
---------------------------------------------------------------*/
-
-.photos__section {
-	padding-top: 2em;
-
-	header {
-		@include full-width-header;
-
-		margin-bottom: 1em;
-		margin-top: 0;
-
-		h2 {
-			margin-bottom: 0;
-		}
-	}
-
+  /* ---
+   * Album container
+   */
 	.ngg-albumoverview {
 		display: flex !important;
 		flex-grow: 3;
 		flex-wrap: wrap;
 	}
 
+  /* ---
+   * Individual album items
+   */
 	.ngg-album-compact {
-		margin-bottom: 2em !important;
-		margin-top: 2em !important;
+		margin-bottom: 2rem !important;
+		margin-top: 2rem !important;
 		width: 100%;
 
 		@include media($medium_screen) {
@@ -54,10 +39,10 @@
 		}
 
 		h4 {
-			font-size: 1.25em;
+			font-size: 1.25rem;
 			font-weight: normal;
 			line-height: 1.25;
-			margin-top: 0.5em;
+			margin-top: 0.5rem;
 
 			.ngg-album-desc {
 				height: auto;
@@ -65,11 +50,17 @@
 		}
 
 		p {
-			font-size: 0.9em;
+			font-size: 0.9rem;
 		}
 
-		a {
+		a.ngg-album-desc {
 			background: transparent;
+      max-width: none !important;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
 		}
 
 		img {
@@ -78,104 +69,100 @@
 		}
 	}
 
-	.ngg-album-compactbox,
-	.ngg-album-compactbox:before,
-	.ngg-album-compactbox:after {
-		border: 0;
-	}
+  /* ---
+   * Individual gallery images
+   */
+  .ngg-gallery-thumbnail-box {
+  	float: none;
+  	width: 100%;
 
+  	@include media($medium_screen) {
+  		@include span-columns(4 of 12);
+  	}
+
+  	@include media($medium_only) {
+  		&:nth-of-type(3n+1) {
+  			@include omega;
+  		}
+  	}
+
+  	@include media($large_screen) {
+  		@include span-columns(3 of 12);
+
+  		&:nth-of-type(4n+1) {
+  			@include omega;
+  		}
+  	}
+
+  	img {
+  		border: 1px solid $black;
+  		height: auto;
+  		margin-bottom: 1rem;
+  		padding: 1px;
+  		width: 100%;
+
+  		&:hover {
+  			opacity: 0.65;
+  		}
+  	}
+  }
+
+  .ngg-gallery-thumbnail {
+  	float: none !important;
+  }
+
+  /* ---
+   * Breadcrumbs
+   */
+  .ngg-breadcrumbs {
+    .ngg-breadcrumb {
+      display: none;
+    }
+
+    .ngg-breadcrumb:last-child {
+      border-bottom: 1px solid $black;
+      font-size: 1.4rem;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  /* ---
+   * Pagination
+   */
+  .ngg-navigation {
+  	font-family: $font-sans;
+    margin: 3rem 0;
+  	padding: 2rem 0 !important;
+
+  	span {
+  		margin: 0 0.5rem !important;
+  	}
+
+  	a.page-numbers, a.next, a.prev,
+  	span.page-numbers, span.next, span.prev {
+  		margin-right: 0.5rem !important;
+  	}
+
+  	a.page-numbers:hover, a.next:hover, a.prev:hover,
+  	span.page-numbers:hover, span.next:hover, span.prev:hover {
+  		background: $purple_dark !important;
+  	}
+  }
+
+  /* ---
+   * Overriding default styles
+   */
 	.ngg-album-compactbox {
+    border: 0;
 		padding: 0 !important;
 
-		.Thumb {
-			width: 100%;
-
-			&:hover {
-				opacity: 0.65;
-			}
-		}
-	}
-}
-
-/*--------------------------------------------------------------
-2.0 Photo album page
---------------------------------------------------------------*/
-
-.page {
-	.nav {
-		border: solid $grey_border;
-		border-width: 1px 0;
-		margin: 2em 0;
-
-		p {
-			font-size: 1em;
-			margin: 0.5em;
-
-			i {
-				margin-right: 5px;
-			}
-		}
+		.Thumb { width: 100%; }
+    .Thumb:hover { opacity: 0.65; }
+    &:before, &:after { border: 0; }
 	}
 
-	.slideshowlink {
-		display: none;
-	}
-}
-
-.ngg-gallery-thumbnail-box {
-	float: none;
-	width: 100%;
-
-	@include media($medium_screen) {
-		@include span-columns(4 of 12);
-	}
-
-	@include media($medium_only) {
-		&:nth-of-type(3n+1) {
-			@include omega;
-		}
-	}
-
-	@include media($large_screen) {
-		@include span-columns(3 of 12);
-
-		&:nth-of-type(4n+1) {
-			@include omega;
-		}
-	}
-
-	img {
-		border: 1px solid $black;
-		height: auto;
-		margin-bottom: 1em;
-		padding: 1px;
-		width: 100%;
-
-		&:hover {
-			opacity: 0.65;
-		}
-	}
-}
-
-.ngg-gallery-thumbnail {
-	float: none !important;
-}
-
-.ngg-navigation {
-	font-family: $font-sans;
-	padding: 2em !important;
-
-	span {
-		margin: 0 0.5em !important;
-	}
-
-	a.page-numbers, a.next, a.prev,
-	span.page-numbers, span.next, span.prev {
-		margin-right: 0.5em !important;
-	}
-
-	a.page-numbers:hover, a.next:hover, a.prev:hover,
-	span.page-numbers:hover, span.next:hover, span.prev:hover {
-		background: $purple_dark !important;
-	}
+  .slideshowlink {
+    display: none;
+  }
 }
