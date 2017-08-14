@@ -115,8 +115,26 @@
    * Breadcrumbs
    */
   .ngg-breadcrumbs {
-    .ngg-breadcrumb {
+    padding: 0;
+    
+    .ngg-breadcrumb-divisor {
       display: none;
+    }
+
+    .ngg-breadcrumb:only-child {
+      display: none !important;
+    }
+
+    .ngg-breadcrumb:first-child {
+      a {
+        visibility: hidden;
+
+        &:before {
+          content: '« back to the album';
+          font-size: 0.9rem;
+          visibility: visible;
+        }
+      }
     }
 
     .ngg-breadcrumb:last-child {
