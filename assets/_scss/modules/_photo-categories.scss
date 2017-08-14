@@ -1,0 +1,53 @@
+.photo-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 4rem;
+
+  li {
+    flex-basis: 48%;
+
+    a {
+      background-color: $black;
+      color: $white;
+      display: block;
+      font-size: 1.4rem;
+      padding: 0.25rem;
+      text-decoration: none;
+
+      &:before {
+        content: ' ';
+        padding-left: 0.25rem;
+      }
+
+      &:after {
+        background-size: cover;
+        content: '';
+        display: block;
+        height: 20rem;
+      }
+
+      &:hover {
+        font-weight: bold;
+        opacity: 0.9;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .travel a:after {
+    background-image: url('../img/photo-cat-travel.jpg');
+  }
+
+  .cruises a:after {
+    background-image: url('../img/photo-cat-cruises.jpg');
+  }
+
+  .concerts a:after {
+    background-image: url('../img/photo-cat-concerts.jpg');
+  }
+
+  .town a:after {
+    background-image: url('../img/photo-cat-town.jpg');
+  }
+}
