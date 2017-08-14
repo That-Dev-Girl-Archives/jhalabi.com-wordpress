@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header" aria-label="Site header">
 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/joni-halabi-logo.png" alt="Joni Halabi site logo" />
     <h1>Joni Halabi</h1>

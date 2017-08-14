@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header aria-label="Page title">
 		<h1><?php the_title(); ?></h1>
 		<?php jhalabi_posted_on(); ?>
@@ -40,4 +40,4 @@
 			</div>
 		</div>
 	</section>
-</article><!-- #post-## -->
+</div><!-- #post-## -->

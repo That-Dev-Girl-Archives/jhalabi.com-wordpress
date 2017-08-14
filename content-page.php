@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<section id="post-<?php the_ID(); ?>" <?php post_class(); ?> aria-label="<?php the_title(); ?>">
 	<h1><?php the_title(); ?></h1>
 	<?php the_content(); ?>
-</article><!-- #post-## -->
+</section><!-- #post-## -->

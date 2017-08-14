@@ -11,23 +11,23 @@
 			<p>Have a question? Just want to say hello? Drop me a note or find me on a social network.</p>
 
 			<p>
-				<a href="http://twitter.com/jonihalabi" class="icon" target="blank">
+				<a href="https://twitter.com/jonihalabi" class="icon" target="blank">
           <span class="fa fa-twitter-square"></span>
           <span class="sr-only">Twitter</span>
         </a>
 
-				<a href="http://www.linkedin.com/in/jonihalabi" class="icon" target="_blank">
-          <i class="fa fa-linkedin-square"></i>
+				<a href="https://www.linkedin.com/in/jonihalabi" class="icon" target="_blank">
+          <span class="fa fa-linkedin-square"></span>
           <span class="sr-only">LinkedIn</span>
         </a>
 
-				<a href="http://www.pinterest.com/jonihalabi/" class="icon" target="_blank">
-          <i class="fa fa-pinterest-square"></i>
+				<a href="https://www.pinterest.com/jonihalabi/" class="icon" target="_blank">
+          <span class="fa fa-pinterest-square"></span>
           <span class="sr-only">Pinterest</span>
         </a>
 
 				<a href="mailto:joni@jhalabi.com" class="icon">
-          <i class="fa fa-envelope"></i>
+          <span class="fa fa-envelope"></span>
           <span class="sr-only">Email</span>
         </a>
 			</p>
