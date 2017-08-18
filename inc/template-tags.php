@@ -103,7 +103,7 @@ if ( !function_exists('jhalabi_blog_categories') ):
 			$html  = sprintf( __('<h2><a href="%s">%s</a></h2>', 'jhalabi'), $link, $cat->name );
 			$html .= '<p>' . $cat->description . '</p>';
 			$html .= sprintf( __('<p><a href="%s" rel="bookmark" class="btn" aria-label="Read %s posts about %s">Read %s Posts</a></p>', 'jhalabi'), $link, $posts_count, $cat->name, $posts_count );
-			echo '<div>' . $html . '</div>';
+			echo '<div class="category">' . $html . '</div>';
 		}
 	}
 endif;
