@@ -5,7 +5,11 @@
   margin: 0 0 4rem;
 
   li {
-    flex-basis: 48%;
+    flex-basis: 100%;
+
+    @include media($large-screen) {
+      flex-basis: 48%;
+    }
 
     a {
       background-color: $black;
