@@ -29,6 +29,30 @@ get_header(); ?>
       </div>
 
 			<div class="site-wrapper">
+        <?php $books2017 = get_field('books_read_2017'); ?>
+
+        <?php if ( have_rows( 'books_read_2017' ) ): ?>
+          <table>
+
+          <?php while ( have_rows( 'books_read_2017' ) ): the_row(); ?>
+            <?php $date = get_sub_field('date'); ?>
+            <?php $title = get_sub_field('title'); ?>
+            <?php $author = get_sub_field('author'); ?>
+            <?php $notes = get_sub_field('notes'); ?>
+
+            <tr>
+              <td><?php echo $date; ?></td>
+              <td><?php echo $title; ?></td>
+              <td><?php echo $author; ?></td>
+              <td><?php echo $notes; ?></td>
+            </tr>
+          <?php endwhile; ?>
+          </table>
+        <?php endif; ?>
+
+
+
+        <hr>
 				<?php echo the_field('books_2017'); ?>
 			</div>
 		</section>

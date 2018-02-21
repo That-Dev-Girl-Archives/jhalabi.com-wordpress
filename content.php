@@ -5,7 +5,7 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" class="excerpt">
-  <?php jhalabi_posted_on(); ?>
+  <?php jhalabi_get_post_date(); ?>
 
 	<?php if (is_archive() || is_search()):?>
 		<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>

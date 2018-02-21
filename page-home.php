@@ -42,7 +42,7 @@ get_header(); ?>
 			<article>
 				<div class="site-wrapper">
 					<div class="excerpt">
-            <?php jhalabi_posted_on(); ?>
+            <?php jhalabi_get_post_date(); ?>
 						<h2>Latest Post: <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<?php the_excerpt(); ?>
 						<a href="<?php the_permalink(); ?>" class="btn" aria-label="Read more about <?php the_title(); ?>">Read more...</a>

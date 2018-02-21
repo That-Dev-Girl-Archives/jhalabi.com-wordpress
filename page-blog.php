@@ -20,12 +20,12 @@ get_header(); ?>
 </div>
 
 <section class="blog-recent" aria-label="Latest blog post">
-	<?php jhalabi_blog_recent(); ?>
+	<?php jhalabi_get_recent_post(); ?>
 </section>
 
 <section class="blog-category-list" aria-label="List of blog categories">
 	<div class="site-wrapper">
-		<?php jhalabi_blog_categories(); ?>
+		<?php jhalabi_get_categories(); ?>
 	</div>
 </section>
 

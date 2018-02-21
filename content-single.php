@@ -7,7 +7,7 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header aria-label="Page title">
 		<h1><?php the_title(); ?></h1>
-		<?php jhalabi_posted_on(); ?>
+		<?php jhalabi_get_post_date(); ?>
 	</header>
 
 	<section class="post-topics" aria-label="Categories and tags">
@@ -30,14 +30,6 @@
 
 		<div class="content">
 			<?php the_content(); ?>
-
-			<div class="comments">
-				<?php  // If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-			</div>
 		</div>
 	</section>
 </div><!-- #post-## -->

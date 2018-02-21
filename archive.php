@@ -28,6 +28,6 @@ get_header(); ?>
 	<?php endif; ?>
 </section>
 
-<?php jhalabi_posts_navigation(); ?>
+<?php jhalabi_get_post_pagination(); ?>
 
 <?php get_footer(); ?>

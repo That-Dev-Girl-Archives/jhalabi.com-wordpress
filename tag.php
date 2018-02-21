@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php get_template_part( 'content', get_post_format() ); ?>
 		<?php endwhile; ?>
 
-		<?php jhalabi_posts_navigation(); ?>
+		<?php jhalabi_get_post_pagination(); ?>
 
 	<?php else : ?>
 		<?php get_template_part( 'content', 'none' ); ?>
