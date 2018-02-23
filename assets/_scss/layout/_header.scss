@@ -71,7 +71,6 @@
     height: 0;
     margin: 0;
     overflow: hidden;
-    -webkit-transition: all 1s;
     transition: all 1s;
 
     @include media($medium_screen) {
