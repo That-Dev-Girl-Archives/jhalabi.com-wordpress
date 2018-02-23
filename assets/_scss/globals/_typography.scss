@@ -110,13 +110,3 @@ br, section {
   clear: both;
   display: block;
 }
-
-.sr-only,
-.screen-reader-text {
-  height: 1px;
-  left: -10000px;
-  overflow: hidden;
-  position: absolute;
-  top: auto;
-  width: 1px;
-}
