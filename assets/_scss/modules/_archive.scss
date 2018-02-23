@@ -1,4 +1,4 @@
-/* -----
+/**
  * Latest post block on the main blog page.
  */
 
@@ -25,7 +25,7 @@
   }
 }
 
-/* -----
+/**
  * Topics block on the main blog page.
  */
 
@@ -62,65 +62,65 @@
   }
 }
 
-/* -----
+/**
  * Category and tag pages
  */
 
- section.archive {
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin-top: 2em;
+section.archive {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2em;
 
-   @include media($large_screen) {
-     display: flex;
-   }
-
-   .excerpt {
-     background: $grey_bg_light;
-     flex-basis: 48%;
-     margin: 0 0 2em;
-     padding: 2em;
-   }
- }
-
- /* -----
-  * Post navigation
-  */
-
-  .navigation.posts-navigation {
-    clear: both;
-    display: inline-block;
-    margin: 2rem 0 4rem;
-    width: 100%;
+  @include media($large_screen) {
+    display: flex;
   }
 
-  .nav-links {
-    .nav-previous {
-      float: left;
+  .excerpt {
+    background: $grey_bg_light;
+    flex-basis: 48%;
+    margin: 0 0 2em;
+    padding: 2em;
+  }
+}
 
-      .fa {
-        padding-right: 5px;
-      }
-    }
+/**
+ * Post navigation
+ */
 
-    .nav-next {
-      float: right;
+.navigation.posts-navigation {
+  clear: both;
+  display: inline-block;
+  margin: 2rem 0 4rem;
+  width: 100%;
+}
 
-      .fa {
-        padding-left: 5px;
-      }
-    }
+.nav-links {
+  .nav-previous {
+    float: left;
 
-    a {
-      background: $black;
-      border-radius: 3px;
-      color: $white;
-      font-size: 1em;
-      padding: 0.5em 1em;
-      text-decoration: none;
-
-      &:hover {
-        background: darken($purple_dark, 5%);
-      }
+    .fa {
+      padding-right: 5px;
     }
   }
+
+  .nav-next {
+    float: right;
+
+    .fa {
+      padding-left: 5px;
+    }
+  }
+
+  a {
+    background: $black;
+    border-radius: 3px;
+    color: $white;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+    &:hover {
+      background: darken($purple_dark, 5%);
+    }
+  }
+}

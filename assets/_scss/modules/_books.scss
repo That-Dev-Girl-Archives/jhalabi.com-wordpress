@@ -1,20 +1,20 @@
 .books {
-	margin: 4em 0;
+  margin: 4em 0;
 
-	.full-width {
-	  @include full-width-header;
+  .full-width {
+    @include full-width-header;
 
-	  h2 {
-	  	margin-bottom: 0;
-	  }
-	}
+    h2 {
+      margin-bottom: 0;
+    }
+  }
 
-	ol {
-		list-style-type: decimal;
-		margin-left: 2em;
-	}
+  ol {
+    list-style-type: decimal;
+    margin-left: 2em;
+  }
 
-	strong {
-		font-weight: bold;
-	}
+  strong {
+    font-weight: bold;
+  }
 }

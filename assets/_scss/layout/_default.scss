@@ -1,10 +1,10 @@
 .site-content {
-	@include container(1.5rem);
+  @include container(1.5rem);
 }
 
 .site-wrapper {
-	@include media($exlarge_screen) {
-		margin: 0 auto;
-		width: calc(#{$max_width} - 400px);
-	}
+  @include media($exlarge_screen) {
+    margin: 0 auto;
+    width: calc(#{$max_width} - 400px);
+  }
 }

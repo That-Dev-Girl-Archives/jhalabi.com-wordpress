@@ -43,8 +43,8 @@ footer {
 
     @include media($medium_screen) {
       @include span-columns(6 of 12);
-        border: 0;
-        padding-top: 0;
+      border: 0;
+      padding-top: 0;
     }
 
     @include media($medium_only) {

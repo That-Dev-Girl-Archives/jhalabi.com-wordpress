@@ -1,13 +1,13 @@
 .error-404 {
   @include full-width();
-	clear: both;
-	display: inline-block;
-	margin-bottom: 4rem;
+  clear: both;
+  display: inline-block;
+  margin-bottom: 4rem;
 
   form {
     label {
-      font-size: 1rem;
-      font-weight: bold;
+    font-size: 1rem;
+    font-weight: bold;
     }
 
     input[type=search] {
@@ -19,27 +19,27 @@
 }
 
 .error-404__div {
-	@include media($medium_screen) {
-		float: left;
-		padding-top: 2rem;
-		width: 50%;
-	}
+  @include media($medium_screen) {
+    float: left;
+    padding-top: 2rem;
+    width: 50%;
+  }
 }
 
 .error-404__div--inner {
-	@include container(0.25rem);
+  @include container(0.25rem);
   clear: both;
 }
 
 .error-404__div--dino {
-	background: url('../img/404-dino.png') no-repeat center center;
-	background-size: contain;
-	height: 12rem;
+  background: url('../img/404-dino.png') no-repeat center center;
+  background-size: contain;
+  height: 12rem;
 
-	@include media($medium_screen) {
-		float: left;
-		height: 15rem;
-		margin-left: 2rem;
-		width: calc(50% - 2rem);
-	}
+  @include media($medium_screen) {
+    float: left;
+    height: 15rem;
+    margin-left: 2rem;
+    width: calc(50% - 2rem);
+  }
 }

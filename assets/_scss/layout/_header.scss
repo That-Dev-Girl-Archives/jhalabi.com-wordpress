@@ -1,5 +1,5 @@
-/* -----
- * Site header for content pages.
+/**
+ * Site header for all pages but the home page.
  */
 
 .site-header {
@@ -41,11 +41,11 @@
 }
 
 
-/* -----
+/**
  * Navigation for content pages.
  */
 
-.site-nav a.menu {
+#open-menu {
   background: $purple_dark;
   display: block;
   font-family: $font-sans;
@@ -123,7 +123,7 @@
 }
 
 
-/* -----
+/**
  * Highlights for current page nav items.
  */
 

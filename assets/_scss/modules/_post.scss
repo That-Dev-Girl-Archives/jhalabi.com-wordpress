@@ -4,7 +4,7 @@
   }
 }
 
-/* -----
+/**
  * List of post categories and tags
  */
 
@@ -49,33 +49,29 @@
     }
   }
 
-  .categories {
-    a {
-      background: $purple_dark;
+  .categories a {
+    background: $purple_dark;
 
-      &:hover {
-        background: lighten($purple_dark, 10%);
-      }
+    &:hover {
+      background: lighten($purple_dark, 10%);
     }
   }
 
-  .tags {
-    a {
-      background: $black;
+  .tags a {
+    background: $black;
 
-      &:hover {
-        background: lighten($black, 25%);
-      }
+    &:hover {
+      background: lighten($black, 25%);
     }
   }
 }
 
-/* -----
+/**
  * The actual post
  */
 
 .post-entry {
-  /* Social sharing links */
+  // Social sharing links
   .share {
     font-family: $font_sans;
     margin-bottom: 2rem;
@@ -143,8 +139,7 @@
   }
 }
 
-
-/* -----
+/**
  * Comments
  */
 

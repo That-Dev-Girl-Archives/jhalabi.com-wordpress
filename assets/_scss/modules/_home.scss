@@ -1,26 +1,26 @@
-/* -----
+/**
  * Home intro section
  */
 
 .home-intro {
-	margin: 2em 0 4em;
+  margin: 2em 0 4em;
 
-	h2 a {
-		font-weight: bold;
+  h2 a {
+    font-weight: bold;
     text-decoration: none;
 
     &:hover {
       color: $black;
     }
-	}
+  }
 
-	&:nth-child(2n) {
-		background: $grey_bg_light;
-		padding-bottom: 2em;
-		margin: 0 calc(-1 * #{$gutter_default});
-	  padding: 3em $gutter_default 4em;
+  &:nth-child(2n) {
+    background: $grey_bg_light;
+    padding-bottom: 2em;
+    margin: 0 calc(-1 * #{$gutter_default});
+    padding: 3em $gutter_default 4em;
 
-		@include media($medium_screen) {
+    @include media($medium_screen) {
       margin: 0 calc(-1 * #{$gutter_medium});
       padding: 4em $gutter_medium 6em;
     }
@@ -29,5 +29,5 @@
       margin: 0 calc(-1 * #{$gutter_large});
       padding: 4em $gutter_large 6em;
     }
-	}
+  }
 }

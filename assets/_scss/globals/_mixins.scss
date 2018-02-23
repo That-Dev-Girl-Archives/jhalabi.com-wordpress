@@ -1,39 +1,40 @@
 @mixin container($top_padding: 2rem) {
   padding: ($top_padding/2) $gutter_default 0;
 
-	@include media($medium_screen) {
-		padding: $top_padding $gutter_medium 0;
-	}
+  @include media($medium_screen) {
+    padding: $top_padding $gutter_medium 0;
+  }
 
-	@include media($large_screen) {
-		padding: $top_padding $gutter_large 0;
-	}
+  @include media($large_screen) {
+    padding: $top_padding $gutter_large 0;
+  }
 }
 
 @mixin full-width {
   margin-left: -$gutter_default;
-	margin-right: -$gutter_default;
+  margin-right: -$gutter_default;
 
   @include media($medium_screen) {
-		margin-left: -$gutter_medium;
-		margin-right: -$gutter_medium;
-	}
+    margin-left: -$gutter_medium;
+    margin-right: -$gutter_medium;
+  }
 
-	@include media($large_screen) {
-		margin-left: -$gutter_large;
-		margin-right: -$gutter_large;
-	}
+  @include media($large_screen) {
+    margin-left: -$gutter_large;
+    margin-right: -$gutter_large;
+  }
 }
 
 @mixin full-width-header {
   @include full-width();
-	background: darken($grey_bg_light, 5%);
-	color: $black;
-	margin-bottom: 2rem;
-	padding: 0.35rem 0;
+  background: darken($grey_bg_light, 5%);
+  color: $black;
+  margin-bottom: 2rem;
+  padding: 0.35rem 0;
 
-	h2, p {
+  h2,
+  p {
     @include container(0.25rem);
-		color: $black;
-	}
+    color: $black;
+  }
 }
