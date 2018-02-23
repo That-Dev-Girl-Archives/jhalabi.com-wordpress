@@ -1,7 +1,5 @@
 .error-404 {
   @include full-width();
-  clear: both;
-  display: inline-block;
   margin-bottom: 4rem;
 
   form {
@@ -12,7 +10,6 @@
 
     input[type=search] {
       font-size: 1rem;
-      margin: 0 0 0 0.5rem;
       width: 20rem;
     }
   }
@@ -32,14 +29,16 @@
 }
 
 .error-404__div--dino {
-  background: url('../img/404-dino.png') no-repeat center center;
+  background: url('../img/404-dino.png') no-repeat center left;
   background-size: contain;
   height: 12rem;
+  margin: 2rem;
 
   @include media($medium_screen) {
+    background-position: center center;
     float: left;
     height: 15rem;
-    margin-left: 2rem;
+    margin: 0 0 0 2rem;
     width: calc(50% - 2rem);
   }
 }

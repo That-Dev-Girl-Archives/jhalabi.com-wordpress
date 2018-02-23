@@ -7,21 +7,21 @@
 
 get_header(); ?>
 
-<h1 class="columns">Congratulations!</h1>
+<h1>Congratulations!</h1>
 
 <section class="error-404">
-	<div class="error-404__div--inner">
-		<div class="error-404__div">
+  <div class="error-404__div--inner">
+    <div class="error-404__div">
       <h2>You found Dino's hiding place!</h2>
       <p>
-          Dino has been sitting here <em>all day</em> waiting for you to stop by.
-          Dino is a great hider, but you are clearly a better seeker.  You rock!
+        Dino has been sitting here <em>all day</em> waiting for you to stop by.
+        Dino is a great hider, but you are clearly a better seeker.  You rock!
       </p>
-		</div>
+    </div>
 
-		<div class="error-404__div--dino">
-		</div>
-	</div>
+    <div class="error-404__div--dino">
+    </div>
+  </div>
 
   <div class="error-404__div--inner">
     <h2>Wait... what?!</h2>
