@@ -12,19 +12,19 @@
 
       <p>
         <a href="https://twitter.com/jonihalabi" class="icon" aria-label="Twitter">
-          <span class="fa fa-twitter-square"></span>
+          <span class="fab fa-twitter"></span>
         </a>
 
         <a href="https://www.linkedin.com/in/jonihalabi" class="icon" aria-label="LinkedIn">
-          <span class="fa fa-linkedin-square"></span>
+          <span class="fab fa-linkedin"></span>
         </a>
 
         <a href="https://www.pinterest.com/jonihalabi/" class="icon" aria-label="Pinterest">
-          <span class="fa fa-pinterest-square"></span>
+          <span class="fab fa-pinterest"></span>
         </a>
 
         <a href="mailto:joni@jhalabi.com" class="icon" aria-label="Email">
-          <span class="fa fa-envelope"></span>
+          <span class="fas fa-envelope"></span>
         </a>
       </p>
     </section>

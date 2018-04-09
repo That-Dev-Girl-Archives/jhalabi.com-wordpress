@@ -18,7 +18,6 @@ textarea {
 
 button,
 input[type=submit],
-a.comment-reply-link,
 a.btn {
   background: $purple_base;
   border: 0;
@@ -32,9 +31,5 @@ a.btn {
 
   &:hover {
     background: $black;
-  }
-
-  .fa {
-    margin-right: 0.5rem;
   }
 }

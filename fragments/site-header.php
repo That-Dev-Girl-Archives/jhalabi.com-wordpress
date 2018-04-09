@@ -6,6 +6,6 @@
 
 	<nav class="site-nav">
 		<button id="open-menu">Menu</button>
-		<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+		<?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
 	</nav>
 </header>

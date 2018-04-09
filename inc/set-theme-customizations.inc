@@ -14,7 +14,7 @@ function jhalabi_set_theme_customizations() {
     array( 'primary' => __( 'Primary Menu', 'jhalabi' ) )
   );
 
-  // Switch default core markup for search form, comment form, and comments
+  // Switch default core markup for search form, gallery, and captions.
   add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption' ) );
 }
 
