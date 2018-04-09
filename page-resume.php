@@ -27,7 +27,7 @@ get_header(); ?>
 
 				<p>
 					<a href="http://www.thatdevgirl.com" class="btn">
-						<span class="fa fa-code"></span> Check out my portfolio!
+						<span class="fas fa-code"></span> Check out my portfolio!
 					</a>
 				</p>
 			</div>
@@ -70,20 +70,20 @@ get_header(); ?>
 
 		<section class="resume__section--social" aria-label="Resume links">
       <div>
-  			<a href="https://github.com/thatdevgirl" target="_blank">
-  				<span class="fa fa-github"></span> GitHub
+  			<a href="https://github.com/thatdevgirl">
+  				<span class="fab fa-github"></span> GitHub
   			</a>
 
-  			<a href="https://www.linkedin.com/in/jonihalabi" target="_blank">
-  				<span class="fa fa-linkedin"></span> LinkedIn
+  			<a href="https://www.linkedin.com/in/jonihalabi">
+  				<span class="fab fa-linkedin"></span> LinkedIn
   			</a>
 
-  			<a href="https://careers.stackoverflow.com/jonihalabi" target="_blank">
-  				<span class="fa fa-stack-overflow"></span> Stack Overflow
+  			<a href="https://careers.stackoverflow.com/jonihalabi">
+  				<span class="fab fa-stack-overflow"></span> Stack Overflow
   			</a>
 
-  			<a href="<?php echo the_field('resume_pdf'); ?>" target="_blank">
-  				<span class="fa fa-file-pdf-o"></span> Resume PDF
+  			<a href="<?php echo the_field('resume_pdf'); ?>">
+  				<span class="fas fa-file-pdf"></span> Resume PDF
   			</a>
       </div>
 		</section>
