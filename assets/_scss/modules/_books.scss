@@ -47,12 +47,6 @@
       }
     }
 
-    .fa-heart {
-      color: $purple_base;
-      font-size: 0.9rem;
-      margin-left: 0.25rem;
-    }
-
     @include media($medium_down) {
       display: block;
       padding: 0.75rem 0;
@@ -72,5 +66,14 @@
         }
       }
     }
+  }
+}
+
+.books-read,
+.intro {
+  .fa-heart {
+    color: $purple_base;
+    font-size: 0.9rem;
+    margin-left: 0.25rem;
   }
 }
