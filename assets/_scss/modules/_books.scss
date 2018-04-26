@@ -31,7 +31,7 @@
   }
 
   tr:nth-child(2n) {
-    @include media($medium_screen) {
+    @include media($large_screen) {
       background: $grey_bg_verylight;
     }
   }
