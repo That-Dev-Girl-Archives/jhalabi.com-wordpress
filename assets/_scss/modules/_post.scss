@@ -71,6 +71,9 @@
  */
 
 .post-entry {
+  display: inline-block;
+  margin-bottom: 4rem;
+  
   // Social sharing links
   .share {
     font-family: $font_sans;
