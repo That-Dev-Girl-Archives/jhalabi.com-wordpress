@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying page content in page.php
+ * Template part used to display page content.
  *
  * @package jhalabi
  */

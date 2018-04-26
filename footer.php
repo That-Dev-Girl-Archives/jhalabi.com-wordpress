@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template to display the site footer.
+ *
+ * @package jhalabi
+ */
+
 </main><!-- #content -->
 
 <?php include_once('fragments/site-footer.php'); ?>

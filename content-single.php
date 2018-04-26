@@ -1,5 +1,7 @@
 <?php
 /**
+ * The template used to display post single content.
+ *
  * @package jhalabi
  */
 ?>

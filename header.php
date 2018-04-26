@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template to display the site header.
+ *
+ * @package jhalabi
+ */
+
 <!DOCTYPE html>
 <html lang="en">
 

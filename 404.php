@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying 404 pages (not found).
+ * Template to display 404 pages (file not found).
  *
  * @package jhalabi
  */

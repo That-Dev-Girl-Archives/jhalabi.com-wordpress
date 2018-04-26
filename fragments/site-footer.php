@@ -1,3 +1,10 @@
+<?php
+/**
+ * Page footer template fragment.
+ *
+ * @package jhalabi
+ */
+
 <footer>
   <div class="footer-row">
     <section aria-label="Blog categories">

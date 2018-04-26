@@ -1,6 +1,6 @@
 <?php
 /**
- * The template part for displaying a message that posts cannot be found.
+ * Template part used to display that posts cannot be found.
  *
  * @package jhalabi
  */

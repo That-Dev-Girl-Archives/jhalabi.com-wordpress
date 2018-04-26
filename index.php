@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * Main template file.
  *
  * @package jhalabi
  */
