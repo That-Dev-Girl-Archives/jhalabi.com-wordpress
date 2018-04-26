@@ -4,6 +4,7 @@
  *
  * @package jhalabi
  */
+?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -4,6 +4,7 @@
  *
  * @package jhalabi
  */
+?>
 
 <header class="home-header">
   <div class="site-wrapper">

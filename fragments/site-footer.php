@@ -4,6 +4,7 @@
  *
  * @package jhalabi
  */
+?>
 
 <footer>
   <div class="footer-row">

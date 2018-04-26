@@ -4,6 +4,7 @@
  *
  * @package jhalabi
  */
+?>
 
 <header class="site-header">
   <a href="/">
