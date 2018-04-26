@@ -41,6 +41,10 @@
 
     &.book {
       padding-right: 3rem;
+
+      @include media($large_screen) {
+        width: 50%;
+      }
     }
 
     .fa-heart {
