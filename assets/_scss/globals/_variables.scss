@@ -38,3 +38,4 @@ $medium_screen:  new-breakpoint(min-width 768px 2);
 $large_screen:   new-breakpoint(min-width 1025px 12);
 $exlarge_screen: new-breakpoint(min-width $max_width 12);
 $medium_only:    new-breakpoint(min-width 768px max-width 1024px 2);
+$medium_down:    new-breakpoint(max-width 1024px 2);

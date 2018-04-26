@@ -9,6 +9,7 @@ require_once( get_template_directory() . '/inc/set-theme-customizations.inc' );
 require_once( get_template_directory() . '/inc/set-assets.inc' );
 require_once( get_template_directory() . '/inc/set-body-classes.inc' );
 
+require_once( get_template_directory() . '/inc/get-books-read.inc' );
 require_once( get_template_directory() . '/inc/get-categories.inc' );
 require_once( get_template_directory() . '/inc/get-recent-post.inc' );
 require_once( get_template_directory() . '/inc/get-post-pagination.inc' );

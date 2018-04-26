@@ -8,13 +8,65 @@
       margin-bottom: 0;
     }
   }
+}
 
-  ol {
-    list-style-type: decimal;
-    margin-left: 2em;
+.books-read {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  width: 100%;
+
+  thead {
+    border-bottom: 2px solid $black;
+
+    @include media($medium_down) {
+      display: none;
+    }
+
+    th {
+      font-weight: bold;
+      padding: 0.5rem 1rem 0.25rem;
+      text-align: left;
+      white-space: nowrap;
+    }
   }
 
-  strong {
-    font-weight: bold;
+  tr:nth-child(2n) {
+    @include media($medium_screen) {
+      background: $grey_bg_verylight;
+    }
+  }
+
+  td {
+    padding: 1.25rem 1rem;
+
+    &.book {
+      padding-right: 3rem;
+    }
+
+    .fa-heart {
+      color: $purple_base;
+      font-size: 0.9rem;
+      margin-left: 0.25rem;
+    }
+
+    @include media($medium_down) {
+      display: block;
+      padding: 0.75rem 0;
+
+      &.notes {
+        font-size: 1rem;
+        padding-top: 0;
+      }
+
+      &.date {
+        font-size: 1rem;
+        padding-bottom: 1.25rem;
+        padding-top: 0;
+
+        &:before {
+          content: 'Read in: ';
+        }
+      }
+    }
   }
 }

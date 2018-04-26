@@ -4,6 +4,7 @@
  *
  * @package jhalabi
  */
+?>
 
 </main><!-- #content -->
 

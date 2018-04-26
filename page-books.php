@@ -9,6 +9,7 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
     <div class="site-wrapper">
       <header aria-label="Page header">
         <h1><?php the_title(); ?></h1>
@@ -22,109 +23,60 @@ get_header(); ?>
       </div>
     </section>
 
-    <?php if (get_field('books_2017')): ?>
-      <section class="books" aria-label="Books read in 2017">
-        <div class="full-width">
-          <h2>Books Read in 2017</h2>
-        </div>
+    <?php // Get the books for each year. ?>
+    <?php for ( $i = 2018; $i >= 2010; $i-- ): ?>
+      <?php $books = jhalabi_get_books_read( $i ); ?>
+      <?php if ( $books ): ?>
 
-        <div class="site-wrapper">
-          <?php $books2017 = get_field('books_read_2017'); ?>
+        <section class="books" aria-label="Books read in <?php echo $i; ?>">
+          <div class="full-width">
+            <h2>Books Read in <?php echo $i; ?></h2>
+          </div>
 
-          <?php if ( have_rows( 'books_read_2017' ) ): ?>
-            <table>
+          <div class="site-wrapper">
+            <?php $books = jhalabi_get_books_read( $i ); ?>
 
-              <?php while ( have_rows( 'books_read_2017' ) ): the_row(); ?>
-                <?php $date = get_sub_field('date'); ?>
-                <?php $title = get_sub_field('title'); ?>
-                <?php $author = get_sub_field('author'); ?>
-                <?php $notes = get_sub_field('notes'); ?>
+            <table class="books-read">
+              <caption class="sr-only">List of books read in <?php echo $i; ?>.</caption>
 
+              <thead>
                 <tr>
-                  <td><?php echo $date; ?></td>
-                  <td><?php echo $title; ?></td>
-                  <td><?php echo $author; ?></td>
-                  <td><?php echo $notes; ?></td>
+                  <th>Book</th>
+                  <th>Thoughts</th>
+                  <th>Date read</th>
                 </tr>
-              <?php endwhile; ?>
+              </thead>
+
+              <tbody>
+                <?php foreach ( $books as $book ): ?>
+                  <tr>
+                    <td class="book">
+                      <b><?php print $book->title; ?></b> &mdash;
+                      <i><?php print $book->author; ?></i>
+                    </td>
+
+                    <td class="notes">
+                      <?php print $book->notes; ?>
+                      <?php if ( $book->recommended ): ?>
+                        <span class="fas fa-heart">
+                          <span class="sr-only">Loved it!</span>
+                        </span>
+                      <?php endif; ?>
+                    </td>
+
+                    <td class="date">
+                      <?php print $book->date; ?>
+                    </td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
             </table>
-          <?php endif; ?>
+          </div>
+        </section>
 
-          <hr>
-          <?php echo the_field('books_2017'); ?>
-        </div>
-      </section>
-    <?php endif; ?>
+      <?php endif; ?>
+    <?php endfor; ?>
 
-    <section class="books" aria-label="Books read in 2016">
-      <div class="full-width">
-        <h2>Books Read in 2016</h2>
-      </div>
-
-      <div class="site-wrapper">
-        <?php echo the_field('books_2016'); ?>
-      </div>
-    </section>
-
-    <section class="books" aria-label="Books read in 2015">
-      <div class="full-width">
-        <h2>Books Read in 2015</h2>
-      </div>
-
-      <div class="site-wrapper">
-        <?php echo the_field('books_2015'); ?>
-      </div>
-    </section>
-
-    <section class="books" aria-label="Books read in 2014">
-      <div class="full-width">
-        <h2>Books Read in 2014</h2>
-      </div>
-
-      <div class="site-wrapper">
-        <?php echo the_field('books_2014'); ?>
-      </div>
-    </section>
-
-    <section class="books" aria-label="Books read in 2013">
-      <div class="full-width">
-        <h2>Books Read in 2013</h2>
-      </div>
-
-      <div class="site-wrapper">
-        <?php echo the_field('books_2013'); ?>
-      </div>
-    </section>
-
-    <section class="books" aria-label="Books read in 2012">
-      <div class="full-width">
-        <h2>Books Read in 2012</h2>
-      </div>
-
-      <div class="site-wrapper">
-        <?php echo the_field('books_2012'); ?>
-      </div>
-    </section>
-
-    <section class="books" aria-label="Books read in 2011">
-      <div class="full-width">
-        <h2>Books Read in 2011</h2>
-      </div>
-
-      <div class="site-wrapper">
-        <?php echo the_field('books_2011'); ?>
-      </div>
-    </section>
-
-    <section class="books" aria-label="Books read in 2010">
-      <div class="full-width">
-        <h2>Books Read in 2010</h2>
-      </div>
-
-      <div class="site-wrapper">
-        <?php echo the_field('books_2010'); ?>
-      </div>
-    </section>
   </article>
 <?php endwhile; ?>
 
