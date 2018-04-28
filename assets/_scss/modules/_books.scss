@@ -1,12 +1,38 @@
 .books {
   margin: 4em 0;
+  position: relative;
 
   .full-width {
     @include full-width-header;
 
     h2 {
+      line-height: 1.2;
       margin-bottom: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      .total {
+        font-size: 1rem;
+        vertical-align: middle;
+      }
     }
+  }
+
+  .anchor {
+    left: 0;
+    position: absolute;
+    top: -48px;
+  }
+}
+
+.book-anchors {
+  font-size: 1.2rem;
+  margin-left: -0.5rem;
+  margin-top: 2rem;
+
+  a {
+    display: inline-block;
+    padding: 0 0.5rem;
   }
 }
 
@@ -66,6 +92,12 @@
         }
       }
     }
+  }
+
+  .author {
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
   }
 }
 

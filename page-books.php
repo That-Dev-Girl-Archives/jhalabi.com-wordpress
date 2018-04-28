@@ -20,6 +20,13 @@ get_header(); ?>
     <section class="intro" aria-label="Introductory text">
       <div class="site-wrapper">
         <?php the_content(); ?>
+
+        <nav class="book-anchors" aria-label="Links to book information by year">
+          <?php for ( $i = 2018; $i >= 2010; $i-- ): ?>
+            <a href="#books-<?php echo $i; ?>"><?php echo $i; ?></a>
+            <?php if ( $i !== 2010 ): ?> | <?php endif; ?>
+          <?php endfor; ?>
+        </nav>
       </div>
     </section>
 
@@ -29,13 +36,16 @@ get_header(); ?>
       <?php if ( $books ): ?>
 
         <section class="books" aria-label="Books read in <?php echo $i; ?>">
+          <div id="books-<?php echo $i; ?>" class="anchor">&nbsp;</div>
+
           <div class="full-width">
-            <h2>Books Read in <?php echo $i; ?></h2>
+            <h2>
+              Books Read in <?php echo $i; ?>
+              <span class="total">(Total: <?php echo count( $books ); ?>)</span>
+            </h2>
           </div>
 
           <div class="site-wrapper">
-            <?php $books = jhalabi_get_books_read( $i ); ?>
-
             <table class="books-read">
               <caption class="sr-only">List of books read in <?php echo $i; ?>.</caption>
 
@@ -51,8 +61,8 @@ get_header(); ?>
                 <?php foreach ( $books as $book ): ?>
                   <tr>
                     <td class="book">
-                      <b><?php print $book->title; ?></b> &mdash;
-                      <i><?php print $book->author; ?></i>
+                      <b><?php print $book->title; ?></b>
+                      <span class="author"><?php print $book->author; ?></span>
                     </td>
 
                     <td class="notes">
